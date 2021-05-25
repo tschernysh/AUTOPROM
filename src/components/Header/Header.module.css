@@ -1,0 +1,401 @@
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+  .whiteBackgroud {
+    width: 100%;
+    background: #FFFFFF;
+  }
+
+  .Header__topInfo {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+  }
+  
+  .Header__topInfo > div {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    font-family: 'Open Sans';
+    color: rgba(39, 37, 34, 0.58);
+  }
+  
+  .Header__topInfo_location {
+    margin-left: 4px;
+  }
+  
+  .Header__topInfo_PhoneNumber {
+    font-family: 'Open Sans';
+    color: rgba(39, 37, 34, 0.58);
+    display: none !important;
+  }
+  
+  .Header__list {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 19px;
+   margin-top: 25px;
+  }
+  
+  .Header__list_leftPart {
+    display: flex;
+    align-items: center;
+  }
+.Header__list_nav {
+    display: flex;
+  }
+  
+  .Header__list_nav li:nth-of-type(2) a:hover>.Header__list_nav_arrow {
+    border: solid #AC0D0D;
+    transform: rotate(-135deg);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+  }
+  
+  .Header__list_nav_arrow {
+    border: solid #FF8514;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    margin-left: 6px;
+    margin-bottom: 3px;
+  }
+  
+  .Header__list_nav li:hover>.Header__list_nav_arrow {
+    border: solid #AC0D0D;
+    transform: rotate(-180deg);
+  }
+  
+  .Header__list_nav li ul {
+    display: none;
+  }
+  
+  .Header__list_nav li {
+    list-style: none;
+  }
+  
+  .Header__list_nav li:hover > ul {
+    display: block;
+  } 
+  
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .Header__list_nav_forUser {
+    position: relative;
+    margin-left: 260px;
+    padding-right: 50px;
+  }
+  
+  .Header__list_nav_forUser li {
+    margin-bottom: 15px;
+    margin-top: 8px;
+  }
+  
+  .Header__list_nav_forUser li a {
+    color: #272522 !important;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .Header__list_nav_forUser li a:hover {
+    color: #FF8514 !important;
+  }
+  
+  
+  .Header__list_nav li {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .Header__list_nav li a {
+    color: #FF8514;
+    text-decoration: none;
+    display: block;
+    padding: 5px 5px 5px 15px;
+    word-break: keep-all;
+  }
+  
+  .Header__list_sublist li a {
+    color: #272522;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  
+  .Header__list_sublist li a:hover {
+    color: #FF8514 !important;
+  }
+  
+  .Header__list_sublist li svg {
+    position: absolute;
+    padding-left: 34px;
+    padding-top: 10px;
+  }
+  
+  .Header__list_sublist li a {
+    display: flex;
+    padding: 15px 50px 15px 91px;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_nav_subArrow {
+    border: solid #FF8514;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+  }
+  
+  .Header__list_nav_subArrow {
+    border: solid #272522;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 25px;
+    margin-top: -30px;
+  }
+  
+  /*subSub*/
+  
+  .Header__list_subSublist_wrap_1,
+    .Header__list_subSublist_wrap_2,
+      .Header__list_subSublist_wrap_3,
+        .Header__list_subSublist_wrap_4,
+          .Header__list_subSublist_wrap_5,
+            .Header__list_subSublist_wrap_6 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 954px;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    background: #FFFFFF;
+    left: 406px;
+    visibility: hidden;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_subSublist_wrap_1 {
+    visibility: visible;
+    top: 0px;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_subSublist_wrap_2 {
+    visibility: visible;
+    top: -55px;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_subSublist_wrap_3 {
+    visibility: visible;
+    top: -109px;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_subSublist_wrap_4 {
+    visibility: visible;
+    top: -164px;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_subSublist_wrap_5 {
+    visibility: visible;
+    top: -218.5px;
+  }
+  
+  .Header__list_sublist li:hover>.Header__list_subSublist_wrap_6 {
+    visibility: visible;
+    top: -273px;
+  }
+  
+  .Header__list_subSublist_element {
+    display: flex;
+    flex-direction: column;
+    width: 237px;
+    position: relative;
+    align-items: center;
+    height: 230px;
+  }
+  
+  .Header__list_subSublist_element img {
+    padding-top: 10px;
+    min-width: 116px;
+    min-height: 116px;
+    max-width: 116px;
+    max-height: 116px;
+  }
+  
+  .Header__list_subSublist_element div a{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #272522;
+    text-decoration: none;
+    text-align: left;
+    margin-left: -70px;
+    margin-top: 40px;
+    white-space: pre-wrap;
+  }
+  
+  .Header__list_subSublist_element div:hover {
+    color: #FF8514;
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(1) {
+    border-bottom: 1px solid rgba(255, 133, 20, 0.3);
+    border-right: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(2) {
+    border-bottom: 1px solid rgba(255, 133, 20, 0.3);
+    border-right: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(3) {
+    border-bottom: 1px solid rgba(255, 133, 20, 0.3);
+    border-right: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(4) {
+    border-bottom: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(5) {
+    border-right: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(6) {
+    border-right: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_subSublist_element:nth-of-type(7) {
+    border-right: 1px solid rgba(255, 133, 20, 0.3);
+  }
+  
+  .Header__list_nav_subSubArrow {
+    border: solid #272522;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-45deg);
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    right: 20px;
+  }
+  
+  .Header__list_subSublist_element div:hover>.Header__list_nav_subSubArrow {
+    border: solid #FF8514;
+    border-width: 0 2px 2px 0;
+    padding: 4px;
+  }
+  
+  /**/
+  
+  .Header__list_nav li ul {
+    display: none;	
+  }
+   
+  .Header__list_nav li:hover {
+    position: relative;
+  }
+  
+  .Header__list_nav li a:hover {
+    color: rgba(172, 13, 13, 1);
+  }
+  
+  .Header__list_nav li:hover > ul {
+    display: block;
+    background-color: #FFFFFF;
+  }
+  .Header__list_nav li:hover ul{
+    position: absolute;
+    top: 35px;       
+    left: -242px; 
+    border-top: 25px solid rgba(0, 0, 0, 0.1) ;
+  }
+  
+  .Header__list_rightPart {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+  }
+  
+  .Header__listElement_PhoneNumber {
+      margin-right: 20px;
+  }
+  
+  .Header__list_rightPartElement {
+      margin-left: 20px;
+  }
+  
+  .Header__list_rightPart_btnText {
+      font-family: 'Open Sans';
+      font-weight: normal;
+      font-size: 18px;
+      color: #272522;
+      text-decoration: none;
+  }
+  
+  .Header__list_rightPart_btnSmallText {
+      font-family: 'Open Sans';
+      font-weight: normal;
+      font-size: 12px;
+      text-decoration-line: underline;
+      color: rgba(0, 0, 0, 0.58);
+      margin-top: -3px;
+  }
+  
+  /*DropDown*/
+  
+  .Header__list_rightPartElement_dropDown {
+    visibility: hidden;
+  }
+  
+  .Header__list_rightPartElement_dropDown_icon {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .Header__list_rightPartElement_dropDown_icon span:nth-of-type(1) {
+    width: 36px;
+    border: 2px solid #272522;
+    position: absolute;
+  }
+  
+  .Header__list_rightPartElement_dropDown_icon span:nth-of-type(2) {
+    width: 30px;
+    border: 2px solid #272522;
+    position: absolute;
+    margin-top: 10px;
+  }
+  
+  .Header__list_rightPartElement_dropDown_icon span:nth-of-type(3) {
+    width: 14px;
+    border: 2px solid #272522;
+    position: absolute;
+    margin-top: 10px;
+  }
+  
+  .Header__list > div > div{
+      display: flex;
+  }
+  
+  .Header__listElement {
+      display: flex;
+      flex-direction: column;
+      margin-top: -5px;
+      margin-left: 8px;
+  }

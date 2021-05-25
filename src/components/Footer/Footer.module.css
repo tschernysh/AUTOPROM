@@ -1,0 +1,163 @@
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 10px;
+  }
+footer {
+    margin-top: 60px;
+  }
+  
+  .maimPage__footer_form {
+    background: #FFFFFF;
+    box-shadow: 2px 4px 19px rgba(0, 0, 0, 0.13);
+    backdrop-filter: blur(4px);
+    border-radius: 41px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 44px;
+  }
+  
+  .maimPage__footer_formText :nth-child(1) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: rgba(0, 0, 0, 0.8);  
+  }
+  
+  .maimPage__footer_formText :nth-child(2) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .maimPage__footer_formInputs {
+    display: flex;
+    flex-grow: 1;
+    margin-left: 68px;
+  }
+  
+  .maimPage__footer_formInputs_name,
+    .maimPage__footer_formInputs_tel {
+      background: #FFFFFF;
+      border: 1px solid #DEDEDE;
+      box-sizing: border-box;
+      border-radius: 10px;
+      min-width: 165px;
+      outline: none;
+      padding-left: 20px;
+    }
+  
+  .maimPage__footer_formInputs_name {
+    max-width: 165px;
+  }
+  
+  .maimPage__footer_formInputs_tel {
+    flex-grow: 2;
+    margin: 0px 35px;
+  }
+  
+  .maimPage__footer_formInputs_submit {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #FF8514;
+    border-radius: 15px;
+    padding: 14px 71px;
+    outline: none;
+    border: none;
+  }
+  
+  .maimPage__footer_formInputs_submit:hover {
+    color: #FF8514;
+    background: #FFFFFF;
+    border: 3px solid #FF8514;
+    padding: 12px 68px;
+    cursor: pointer;
+  }
+  
+  .mainPage__footer_mainPart {
+    display: flex;
+    background: #272522;
+    padding-top: 78px;
+    margin-top: -32px;
+    padding-bottom: 111px;
+  }
+  
+  .mainPage__footer_background {
+    background: #272522;
+  }
+  
+  .mainPage__footer_mainPart_svgs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .mainPage__footer_mainPart span {
+    border: 1px rgba(255, 255, 255, 0.05) solid;
+    transform: rotate(180deg);
+    margin-left: 50px;
+    margin-right: 36px;
+  }
+  
+  .mainPage__footer_mainPartElement {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainPage__footer_mainPartElement_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 21px;
+    white-space: nowrap;
+  }
+  
+  .mainPage__footer_mainPartElement_text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.53); 
+    text-decoration: none; 
+    margin-bottom: 12px;
+  }
+  
+  .mainPage__footer_mainPartElement_contacts_location {
+    margin-bottom: 18px;
+  }
+  
+  .mainPage__footer_mainPartElement_contacts_location a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.53); 
+    text-decoration: none; 
+    padding-left: 10px;
+  }
+  
+  .mainPage__footer_mainPartElement_contacts_tel a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(255, 255, 255, 0.53); 
+    text-decoration: none; 
+    padding-left: 5px;
+  }
