@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import {Route} from 'react-router-dom'
 import Main from "./components/Main/Main";
+import About from './components/About/About';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <div className={s.container}>
         <Route path='/' render={() => <Main />} />
+        <Route path='/about' render={() => <About />} />
       </div>
       <Footer />
     </div>
