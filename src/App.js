@@ -10,6 +10,7 @@ import ForUser from "./components/ForUser/ForUser";
 import Blog from "./components/Blog/Blog";
 import ProductCard from "./components/ProductCard/ProductCard";
 import BlogItem from "./components/BlogItem/BlogItem";
+import Error404 from "./components/Error404/Error404";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path='/ForUser' render={() => <ForUser />}/>
         <Route path='/Blog' render={() => <Blog />}/>
         <Route path='/BlogItem' render={() => <BlogItem />}/>
+        <Route path='/Error404' render={() => <Error404 />}/>
       {/*</div>*/}
       <Footer />
     </div>
