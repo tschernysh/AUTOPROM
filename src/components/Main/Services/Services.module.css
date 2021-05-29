@@ -1,0 +1,26 @@
+
+.main__Page_OurServices {
+    background: #FFFFFF;
+}
+
+.main__Page_OurServices > div > h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #272522;
+    padding-top: 60px;
+    padding-bottom: 45px;
+}
+
+.main__Page_OurServices_wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 68px;
+}
+
+
+.main__Page_OurServices_wrap > div > a {
+    text-decoration: none;
+}

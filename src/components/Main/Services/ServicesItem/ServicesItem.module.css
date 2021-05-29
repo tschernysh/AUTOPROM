@@ -1,0 +1,22 @@
+
+.main__Page_OurServices_Element {
+    height: 250px;
+    width: 440px;
+    background-repeat: no-repeat;
+}
+
+.main__Page_OurServices_Element_text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 410px;
+    height: 77px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin: 141px 15px 32px 15px;
+    text-align: center;
+}

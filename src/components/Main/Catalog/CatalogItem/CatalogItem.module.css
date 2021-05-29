@@ -1,0 +1,96 @@
+
+.mainPage__contentWrap {
+    background-repeat: no-repeat;
+    width: 440px;
+    min-height: 250px;
+}
+
+.mainPage__btnList {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 410px;
+}
+
+.mainPage__btnList>a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 20px;
+    background: none;
+    width: 50%;
+}
+
+.mainPage__btnList>a:hover {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    font-size: 20px;
+    line-height: 27px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 20px;
+}
+
+.mainPage__contentElement {
+    position: absolute;
+    display: inline-block;
+    width: 410px;
+    margin: 16px 15px 0 15px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.mainPage__submitList {
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.mainPage__submitList>a {
+    display: block;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.mainPage__submitList div {
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+}
+
+.mainPage__submitList_leftPart {
+    width: 50%;
+}
+
+.mainPage__submitList_rightPart {
+    margin-top: -130px;
+    margin-left: 205px;
+    padding-bottom: 49px;
+}
+
+.mainPage__submitList div a {
+    display: block;
+    color: white;
+    border: none;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Open Sans';
+    font-weight: 'SemiBold';
+    font-size: 16px;
+    line-height: 22px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+
+.mainPage__contentElement:hover>.mainPage__submitList {
+    display: block;
+}

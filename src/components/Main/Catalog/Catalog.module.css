@@ -1,0 +1,58 @@
+.mainPage__catalog {
+    background-color: #E5E5E5;
+}
+
+.mainPage__catalog>h1 {
+    padding-top: 71px;
+    padding-bottom: 45px;
+    color: #272522;
+    font-family: 'Open Sans';
+    font-weight:  Bold;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.mainPage__contentList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mainPage__contentWrap_1 {
+    background: url(../../../common/img/autoTools.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    min-height: 250px;
+    margin-bottom: 20px;
+}
+
+.mainPage__contentWrap_2 {
+    background: url(../../../common/img/accessoriesAndEquipment.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    min-height: 250px;
+    margin-bottom: 20px;
+}
+
+.mainPage__contentWrap_3 {
+    background: url(../../../common/img/audioAndVideoEquipment.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    margin-bottom: 20px;
+    min-height: 250px;
+}
+
+.mainPage__contentWrap_4 {
+    background: url(../../../common/img/autoLight.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    min-height: 250px;
+}
+
+.mainPage__contentWrap_5 {
+    background: url(../../../common/img/electronics.png);
+    background-repeat: no-repeat;
+    width: 440px;
+    min-height: 250px;
+}
+

@@ -1,0 +1,120 @@
+
+.mainPage__firstBlock_blockWithCar {
+    background-image: url(../../../common/img/mainPageCarImg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+}
+
+.mainPage__firstBlock_blockWithCar > div:nth-of-type(1) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 115%;
+    color: #FFFFFF;
+    padding-top: 7%;
+    padding-left: 5%;
+}
+
+.mainPage__firstBlock_blockWithCar > div:nth-of-type(2) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #9E9E9E;
+    display: flex;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.mainPage__firstBlock_blockWithCar > div:nth-of-type(2) > span {
+    border: 1px solid #9E9E9E;
+    width: 30px;
+    margin: 0px 12px;
+    padding: 0px;
+}
+
+.mainPage__firstBlock_blockWithCar > div:nth-of-type(3) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFC60B;
+    margin-top: 2%;
+    margin-left: 5%;
+    padding-bottom: 7%;
+}
+
+.mainPage__firstBlock_form_input {
+    background: #FFFFFF;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 194.69%;
+    color: #AAAAAA;
+    padding-top: 9px;
+    padding-left: 21px;
+    padding-bottom: 11px;
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 0px;
+}
+
+.mainPage__firstBlock_form_sending_form div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainPage__firstBlock_form_sending_form div > span {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    max-width: 480px;
+    margin-left: -20px;
+    margin-top: -15px;
+    margin-right: 34px;
+}
+
+.mainPage__firstBlock_form_submit {
+    background: #FF8514;
+    border-radius: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 71px;
+}
+
+.mainPage__firstBlock_form_submit:hover {
+    color: #FF8514;
+    background: #FFFFFF;
+    border: 3px solid #FF8514;
+    padding: 7px 68px;
+    cursor: pointer;
+}
+
+.mainPage__firstBlock_form_sending_form {
+    display: flex;
+    width: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 50px rgba(196, 196, 196, 0.15);
+    border-radius: 41px;
+    padding: 16px 70px;
+    background-image: url(../../../common/img/mainPageLoup.png);
+    background-repeat: no-repeat;
+    background-position: 50px 64%;
+    margin: 0 auto;
+    z-index: 2;
+    position: relative;
+    bottom: -35px;
+}

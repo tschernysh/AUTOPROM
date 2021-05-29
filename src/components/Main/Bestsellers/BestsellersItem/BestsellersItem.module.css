@@ -1,0 +1,130 @@
+
+
+.mainPage__bestsellers_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.mainPage__bestsellers_element {
+    width: 325px;
+    height: 514px;
+    background: #FFFFFF;
+
+    position: relative;
+}
+
+.mainPage__bestsellers_element_top {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.mainPage__bestsellers_element_top :nth-child(1) {
+    background: #518FEB;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 2;
+    width: 111px;
+    text-align: center;
+}
+
+.mainPage__bestsellers_element_top :nth-child(2) {
+    background: #FF8514;
+    border-radius: 0px 10px 10px 0px;
+    width: 120px;
+    text-align: center;
+    margin-left: -8px;
+}
+
+.mainPage__bestsellers_element_content {
+    padding-top: 26px;
+    padding-left: 36px;
+}
+
+.mainPage__bestsellers_element_content_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 22px;
+}
+
+.mainPage__bestsellers_element_content_comment a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-left: 11px;
+}
+
+.mainPage__bestsellers_element_content>img {
+    margin-top: 24px;
+    margin-bottom: 9px;
+}
+
+.mainPage__bestsellers_element_content_price :nth-child(1) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #272522;
+}
+
+.mainPage__bestsellers_element_content_price :nth-child(2) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: line-through;
+    color: rgba(39, 37, 34, 0.6);
+    margin-left: 12px;
+}
+
+.mainPage__bestsellers_element_content_info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 6px;
+}
+
+.mainPage__bestsellers_element_content_btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FF8514;
+    border: 3px solid #FF8514;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 10px 68px;
+    text-decoration: none;
+    margin-right: 23px;
+}
+
+.mainPage__bestsellers_element_content_btn:hover {
+    color: #FFFFFF;
+    background: #FF8514;
+}
+
+.mainPage__bestsellers_element_content_btns {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: 18px;
+    margin-right: 22px;
+}
