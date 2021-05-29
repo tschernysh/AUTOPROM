@@ -440,7 +440,7 @@ const Header = (props) => {
                                 </li>
                                 <li><NavLink to='/About' >О нас</NavLink></li>
                                 <li><NavLink to='/Services' >Услуги</NavLink></li>
-                                <li><a href="#">Блог</a></li>
+                                <li><NavLink to='/Blog'>Блог</NavLink></li>
                             </nav>
 
                         </div>

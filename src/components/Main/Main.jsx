@@ -5,12 +5,15 @@ import Bestsellers from "./Bestsellers/Bestsellers";
 import Services from "./Services/Services";
 
 const Main = () => {
-    return(
+    return (
         <>
-            <SearchBanner />
-            <Catalog/>
-            <Bestsellers/>
+            <div className={s.container}>
+                <SearchBanner/>
+                <Catalog/>
+                <Bestsellers/>
+            </div>
             <Services/>
+
         </>
     )
 }

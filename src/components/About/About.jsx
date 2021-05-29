@@ -7,9 +7,11 @@ import Advantages from "./Advantages/Advantages";
 const About = (props) => {
     return (
         <>
-            <Background/>
-            <AboutMain />
-            <Advantages />
+            <div className={a.container}>
+                <Background/>
+                <AboutMain/>
+            </div>
+            <Advantages/>
         </>
 
     )

@@ -10,12 +10,12 @@
     font-size: 28px;
     line-height: 38px;
     color: #272522;
-    margin: 33px 0 25px 0;
+    margin: 33px 0 25px 13.5%;
 }
 
 .payment__items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .payment__item__title {
@@ -33,6 +33,7 @@
     line-height: 140%;
     color: rgba(0, 0, 0, 0.9);
     margin-bottom: 40px;
+    margin-right: 82px;
 }
 
 .payment__item__text__first {

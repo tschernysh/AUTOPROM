@@ -6,8 +6,10 @@ import Serve from "./Serve/Serve";
 const Services = (props) => {
     return (
         <>
-            <ServicesBackground />
-            <Serve />
+            <div className={s.container}>
+                <ServicesBackground/>
+                <Serve/>
+            </div>
         </>
     )
 }

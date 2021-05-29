@@ -4,7 +4,9 @@
     font-family: Open Sans;
 }
 
-.container {
-
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 10px;
 }
 
