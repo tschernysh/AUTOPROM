@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <div className={s.container}>
-        <Route path='/' render={() => <Main />} />
-        <Route path='/about' render={() => <About />} />
+        <Route exact path='/' render={() => <Main />} />
+        <Route path='/About' render={() => <About />} />
       </div>
       <Footer />
     </div>
