@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Services from "./components/Services/Services";
 import ForUser from "./components/ForUser/ForUser";
 import Blog from "./components/Blog/Blog";
+import BlogItem from "./components/BlogItem/BlogItem";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/Services' render={() => <Services />} />
         <Route path='/ForUser' render={() => <ForUser />}/>
         <Route path='/Blog' render={() => <Blog />}/>
+        <Route path='/BlogItem' render={() => <BlogItem />}/>
       {/*</div>*/}
       <Footer />
     </div>

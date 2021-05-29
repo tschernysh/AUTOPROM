@@ -1,0 +1,118 @@
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.blog__first__menu a{
+    font-style: italic;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    outline: none;
+    text-decoration: none;
+}
+
+.blog__menu__first {
+    margin-bottom: 45px;
+}
+
+.blog__first__content__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #272522;
+    margin: 45px 0 35px 0;
+}
+
+.blog__first__content__text {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #272522;
+    margin-bottom: 35px;
+}
+
+.blog__first__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__first__item {
+    max-width: 600px;
+    margin-right: 10%;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.blog__first__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog__first__item__right__data {
+    display: flex;
+    margin-top: 18px;
+}
+
+.blog__first__item__right__data__date {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFC60B;
+    margin-right: 15px;
+    margin-bottom: 12px;
+}
+
+.blog__first__item__right__data__location {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.blog__first__item__right__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 8px;
+    max-width: 440px;
+}
+
+.blog__first__item__right__text {
+    font-size: 18px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 23px;
+    max-width: 440px;
+}
+
+.blog__first__item__right__more {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #FF8514;
+    text-align: right;
+}
+
+.blog__first__item__right__more NavLink:visited {
+    color: #FF8514;
+}
+
+.blog__first__item__right__more a:visited {
+    color: #FF8514;
+}
+
+.blog__first__slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__more__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #272522;
+}
