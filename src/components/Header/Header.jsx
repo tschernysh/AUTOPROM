@@ -60,28 +60,28 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_1}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_8.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_8.png" alt=""/>
                                                         <div>
                                                             <a href="#">Автомобильные компрессоры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_9.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_9.png" alt=""/>
                                                         <div>
                                                             <a href="#">Домкраты и опоры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_10.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_10.png" alt=""/>
                                                         <div>
                                                             <a href="#">Слесарный инструмент</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_11.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_11.png" alt=""/>
                                                         <div>
                                                             <a href="#">Диагностическое оборудование</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
@@ -100,49 +100,49 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_2}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_2.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_2.png" alt=""/>
                                                         <div>
                                                             <a href="#">Автоакустика</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_3.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_3.png" alt=""/>
                                                         <div>
                                                             <a href="#">Автомагнитолы</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_4.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_4.png" alt=""/>
                                                         <div>
                                                             <a href="#">Автомобильные телевизоры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_5.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_5.png" alt=""/>
                                                         <div>
                                                             <a href="#">Антенны</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_6.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_6.png" alt=""/>
                                                         <div>
                                                             <a href="#">Переходные рамки</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_7.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_7.png" alt=""/>
                                                         <div>
                                                             <a href="#">Усилители</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
@@ -180,42 +180,42 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_3}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
@@ -243,56 +243,56 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_4}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
@@ -315,35 +315,35 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_5}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
@@ -376,49 +376,49 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_6}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="assets/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>

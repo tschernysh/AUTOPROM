@@ -24,8 +24,8 @@ const ProductItem = () => {
                     <img src={ProductPhoto} alt=""/>
                 </div>
                 <div className={s.product__chars}>
-                    <div className="product__chars_title">Характеристики</div>
-                    <div className="product__chars_list">
+                    <div className={s.product__chars_title}>Характеристики</div>
+                    <div className={s.product__chars_list}>
                         <p>
                             <div>Бренд</div>
                             <div>Depo</div>
@@ -60,15 +60,15 @@ const ProductItem = () => {
                         </p>
                     </div>
                 </div>
-                <div className="product__delivery">
-                    <div className="product__delivery_title">Доставка</div>
-                    <div className="product__delivery_type">
+                <div className={s.product__delivery}>
+                    <div className={s.product__delivery_title}>Доставка</div>
+                    <div className={s.product__delivery_type}>
                        <h5>Самовывоз</h5>
                         <p>9:00 - 18:00</p>
                         <p>ул. Никольско-Слободская, 6Г
                             (возле ст.м. Левобережная)</p>
                     </div>
-                    <div className="product__delivery_post">
+                    <div className={s.product__delivery_post}>
                         <h5>Новая почта</h5>
                         <p>срок: 1-3 дня</p>
                         <p>стоимость - по тарифам НП</p>
