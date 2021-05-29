@@ -1,0 +1,127 @@
+
+.mainPage__OurClientsrecommend_element {
+    background: #FFFFFF;
+    position: relative;
+}
+
+.mainPage__OurClientsrecommend_element_top {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.mainPage__OurClientsrecommend_element_top :nth-child(1) {
+    background: #FFC60B;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    padding: 4px 36px;
+}
+
+.mainPage__OurClientsrecommend_element_content {
+    padding-top: 26px;
+    padding-left: 30px;
+}
+
+.mainPage__OurClientsrecommend_element_content_title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 22px;
+    white-space: nowrap;
+}
+
+.mainPage__OurClientsrecommend_element_content_comment a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    margin-left: 11px;
+}
+
+.mainPage__OurClientsrecommend_element_content>img {
+    margin-top: 24px;
+    margin-bottom: 9px;
+}
+
+.mainPage__OurClientsrecommend_element_content_price :nth-child(1) {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #272522;
+}
+
+.mainPage__OurClientsrecommend_element_content_info {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-top: 6px;
+}
+
+.mainPage__OurClientsrecommend_element_content_btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FF8514;
+    border: 3px solid #FF8514;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 10px 68px;
+    text-decoration: none;
+    margin-right: 23px;
+    margin-top: 19px;
+}
+
+.mainPage__OurClientsrecommend_element_content_btn:hover {
+    color: #FFFFFF;
+    background: #FF8514;
+}
+
+.mainPage__OurClientsrecommend_element_content_btns {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 18px;
+    margin-right: 22px;
+}
+
+.mainPage__OurClientsrecommend_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.mainPage__OurClientsrecommend_btn a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FF8514;
+    padding: 10px 50px;
+    border: 3px solid #FF8514;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.mainPage__OurClientsrecommend_btn a:hover {
+    color: #FFFFFF;
+    background: #FF8514;
+}
