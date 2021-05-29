@@ -9,6 +9,7 @@ import Services from "./components/Services/Services";
 import ForUser from "./components/ForUser/ForUser";
 import Blog from "./components/Blog/Blog";
 import ProductCard from "./components/ProductCard/ProductCard";
+import BlogItem from "./components/BlogItem/BlogItem";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         <Route path='/forUser' render={() => <ForUser />}/>
         <Route path='/blog' render={() => <Blog />}/>
         <Route path='/product' render={() => <ProductCard />}/>
+        <Route path='/ForUser' render={() => <ForUser />}/>
+        <Route path='/Blog' render={() => <Blog />}/>
+        <Route path='/BlogItem' render={() => <BlogItem />}/>
       {/*</div>*/}
       <Footer />
     </div>
