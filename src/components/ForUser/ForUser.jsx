@@ -8,10 +8,14 @@ import Warranty from "./Warranty/Warranty";
 const ForUser = (props) => {
     return (
         <>
-            <Shop />
-            <Delivery />
+            <div className={f.container}>
+                <Shop />
+                <Delivery />
+            </div>
             <Payment />
-            <Warranty />
+            <div className={f.container}>
+                <Warranty />
+            </div>
         </>
     )
 }

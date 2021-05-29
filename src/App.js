@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className={s.container}>
+      {/*<div className={s.container}>*/}
         <Route exact path='/' render={() => <Main />} />
         <Route path='/About' render={() => <About />} />
         <Route path='/Services' render={() => <Services />} />
