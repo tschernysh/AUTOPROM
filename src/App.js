@@ -8,6 +8,7 @@ import About from './components/About/About';
 import Services from "./components/Services/Services";
 import ForUser from "./components/ForUser/ForUser";
 import Blog from "./components/Blog/Blog";
+import ProductCard from "./components/ProductCard/ProductCard";
 
 function App() {
   return (
@@ -15,10 +16,11 @@ function App() {
       <Header />
       {/*<div className={s.container}>*/}
         <Route exact path='/' render={() => <Main />} />
-        <Route path='/About' render={() => <About />} />
+        <Route path='/about' render={() => <About />} />
         <Route path='/Services' render={() => <Services />} />
-        <Route path='/ForUser' render={() => <ForUser />}/>
-        <Route path='/Blog' render={() => <Blog />}/>
+        <Route path='/forUser' render={() => <ForUser />}/>
+        <Route path='/blog' render={() => <Blog />}/>
+        <Route path='/product' render={() => <ProductCard />}/>
       {/*</div>*/}
       <Footer />
     </div>
