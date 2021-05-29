@@ -1,0 +1,42 @@
+
+.mainPage__OurClientsrecommend_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainPage__OurClientsrecommend_h1 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #272522;
+    margin-bottom: 49px;
+    margin-top: 60px;
+}
+
+.mainPage__bestsellers_btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.mainPage__bestsellers_btn a {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FF8514;
+    padding: 10px 50px;
+    border: 3px solid #FF8514;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.mainPage__bestsellers_btn a:hover {
+    color: #FFFFFF;
+    background: #FF8514;
+}

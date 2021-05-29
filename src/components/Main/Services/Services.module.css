@@ -2,7 +2,11 @@
 .main__Page_OurServices {
     background: #FFFFFF;
 }
-
+.main__page_wrapper{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
 .main__Page_OurServices > div > h1 {
     font-family: 'Open Sans';
     font-style: normal;
