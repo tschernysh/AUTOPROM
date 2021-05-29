@@ -1,0 +1,79 @@
+.serve__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #272522;
+    margin-top: 60px;
+}
+
+.serve__content__item {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.serve__content {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.serve__content__item__left {
+    margin-right: 40px;
+}
+
+.serve__content__item__right__other {
+    display: flex;
+    align-items: flex-end;
+}
+
+.serve__content__item__right__title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.serve__content__item__right__text {
+    font-size: 18px;
+    line-height: 140%;
+    color: #000000;
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+.serve__content__item__right__other__price {
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    margin-right: 20px;
+}
+
+.serve__content__item__right__other__cost {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    margin-right: 170px;
+}
+
+
+.serve__content__item__right__other__cost__button {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #FF8514;
+    border-radius: 15px;
+    padding: 14px 71px;
+    outline: none;
+    border: none;
+}
+
+.serve__content__item__right__other__cost__button:hover {
+    color: #FF8514;
+    background: #FFFFFF;
+    border: 3px solid #FF8514;
+    padding: 12px 68px;
+    cursor: pointer;
+}

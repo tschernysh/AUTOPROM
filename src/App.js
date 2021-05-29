@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import {Route} from 'react-router-dom'
 import Main from "./components/Main/Main";
 import About from './components/About/About';
+import Services from "./components/Services/Services";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className={s.container}>
         <Route exact path='/' render={() => <Main />} />
         <Route path='/About' render={() => <About />} />
+        <Route path='/Services' render={() => <Services />} />
       </div>
       <Footer />
     </div>

@@ -41,7 +41,7 @@ const Header = (props) => {
                             </svg>
 
                             <nav className={s.Header__list_nav}>
-                                <li><NavLink to='/Main' >Главная</NavLink></li>
+                                <li><NavLink to='/' >Главная</NavLink></li>
 
                                 <li><a href="#">Каталог<span className={s.Header__list_nav_arrow}></span></a>
                                     <ul className={s.Header__list_sublist}>
@@ -438,7 +438,7 @@ const Header = (props) => {
                                     </ul>
                                 </li>
                                 <li><NavLink to='/About' >О нас</NavLink></li>
-                                <li><a href="#">Услуги</a></li>
+                                <li><NavLink to='/Services' >Услуги</NavLink></li>
                                 <li><a href="#">Блог</a></li>
                             </nav>
 
