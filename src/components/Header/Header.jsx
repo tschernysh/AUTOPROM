@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
+import ForUser from "../ForUser/ForUser";
 
 const Header = (props) => {
 
@@ -430,7 +431,7 @@ const Header = (props) => {
                                     </ul>
                                 </li>
 
-                                <li><a href="#">Пользователю<span className={s.Header__list_nav_arrow}></span></a>
+                                <li><NavLink to='/ForUser'>Пользователю<span className={s.Header__list_nav_arrow}></span></NavLink>
                                     <ul className={s.Header__list_nav_forUser}>
                                         <li><a href="#">Доставка</a></li>
                                         <li><a href="#">Оплата</a></li>

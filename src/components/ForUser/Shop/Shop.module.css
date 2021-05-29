@@ -1,0 +1,45 @@
+.shop__background {
+    background-image: url("/src/common/img/ShopBackground.png") ;
+    height: 765px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.shop__price {
+    display: flex;
+}
+
+.shop__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 115%;
+    color: #FFFFFF;
+    max-width: 610px;
+}
+
+.shop__price__text,
+.shop__price__text2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #DEDEDE;
+    margin-top: 20px;
+}
+
+.shop__price__line {
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.shop__gift {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #FFC60B;
+    max-width: 620px;
+    margin-top: 20px;
+}

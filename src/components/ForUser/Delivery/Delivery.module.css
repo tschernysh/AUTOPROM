@@ -1,0 +1,35 @@
+.delivery__item {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.delivery__title {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: #272522;
+    margin: 35px 0 30px 0;
+}
+
+.delivery__item__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.delivery__item__text {
+    font-size: 18px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.9);
+    max-width: 595px;
+    margin-right: 95px;
+}
+
+.delivery__item__text__second {
+    font-size: 18px;
+    line-height: 140%;
+    color: rgba(0, 0, 0, 0.9);
+    max-width: 690px;
+}

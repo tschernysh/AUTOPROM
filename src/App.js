@@ -6,6 +6,7 @@ import {Route} from 'react-router-dom'
 import Main from "./components/Main/Main";
 import About from './components/About/About';
 import Services from "./components/Services/Services";
+import ForUser from "./components/ForUser/ForUser";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path='/' render={() => <Main />} />
         <Route path='/About' render={() => <About />} />
         <Route path='/Services' render={() => <Services />} />
+          <Route path='/ForUser' render={() => <ForUser />}/>
       </div>
       <Footer />
     </div>
