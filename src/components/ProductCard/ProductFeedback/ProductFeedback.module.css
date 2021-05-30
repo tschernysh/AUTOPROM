@@ -1,0 +1,39 @@
+.product__feedback_wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.product__feedback_title{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.product__feedback_title div:nth-child(1){
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+}
+.product__feedback_title div:nth-child(2){
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: #FF8514;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.product__feedback_wrapper button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.left{
+    left: -3%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.right{
+    right: -3%;
+    top: 50%;
+    transform: translate(0, -50%);
+}

@@ -1,0 +1,30 @@
+.product__seen{
+    margin-top: 70px;
+}
+.product__seen_wrapper{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.product__seen_title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 25px;
+}
+.product__seen_wrapper button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.left{
+    left: -3%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.right{
+    right: -3%;
+    top: 50%;
+    transform: translate(0, -50%);
+}

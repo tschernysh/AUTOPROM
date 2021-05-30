@@ -1,0 +1,82 @@
+.product__about{
+    margin-top: 60px;
+}
+.product__about_nav{
+    display: flex;
+    margin-bottom: 50px;
+}
+.product__about_nav svg{
+    transform: rotate(180deg);
+    stroke: #000;
+    margin-left: 9px;
+    transition: 0.5s;
+}
+.product__about_nav svg path{
+    stroke: #000;
+}
+.product__about_nav button{
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    transition: 0.5s;
+}
+.product__about_nav button:nth-child(1){
+    margin-right: 26px;
+}
+.active__tab{
+    color: #FF8514;
+
+}
+.active__tab svg{
+    transform: rotate(0deg);
+}
+.active__tab svg path{
+    stroke: #FF8514;
+}
+.product__about_chars{
+    display: flex;
+}
+.product__about_chars div{
+    width: 40%;
+}
+.product__about_chars div p{
+    display: flex;
+    margin-bottom: 22px;
+}
+.product__about_chars div p div:nth-child(1){
+    font-size: 14px;
+    font-weight: 400;
+    color: #000000B2;
+}
+.product__about_chars div p div:nth-child(2){
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.product__about_about{
+    display: flex;
+    justify-content: space-between;
+}
+.product__about_about div{
+    width: 45%;
+}
+.product__about_about div h5{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.product__about_about div p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000CC;
+    margin-bottom: 35px;
+}
+.product__about_about div ul{
+    margin-bottom: 35px;
+    list-style: none;
+}
