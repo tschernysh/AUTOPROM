@@ -1,0 +1,397 @@
+/*------------registration------------*/
+.popups__registration {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 555px;
+    height: 691px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.popups__registration__exit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 17px 29px 0 0;
+}
+
+.popups__registration__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #272522;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.popups__registration__social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.popups__registration__google {
+    margin-right: 45px;
+}
+
+.popups__registration__input {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px 15px 20px;
+    width: 473px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 41px 19px 41px;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.popups__registration__bottom {
+    display: flex;
+}
+
+.popups__registration__confirm {
+    margin-left: 54px;
+}
+
+.popups__registration__confirm__text {
+    margin-left: 16px;
+    vertical-align: middle;
+}
+
+.popups__registration__checkbox{
+    display: none;
+}
+.popups__registration__checkbox + label{
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.popups__registration__checkbox + label:before{
+    font-size: 20px;
+}
+
+.popups__registration__checkbox +label:after {
+
+}
+.popups__registration__checkbox:checked + label{
+    border: 2px solid #FF8514;
+    background: url("../../../src/common/img/Registration__checkbox.png") no-repeat center;
+}
+
+.popups__registration__button {
+    font-weight: bold;
+    width: 473px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #FF8514;
+    border-radius: 15px;
+    padding: 14px 71px;
+    outline: none;
+    border: none;
+    margin: 31px 41px 20px 41px;
+}
+
+.popups__registration__button:hover {
+    color: #FF8514;
+    background: #FFFFFF;
+    border: 3px solid #FF8514;
+    padding: 12px 68px;
+    cursor: pointer;
+}
+
+.popups__registration__text__bottom {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #FF8514;
+    margin: 0 142px 79px 154px;
+}
+
+/*------------log in------------*/
+
+.popups__log_in{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 555px;
+    height: 617px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.popups__log_in__exit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 17px 29px 0 0;
+}
+
+.popups__log_in__text {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #272522;
+    text-align: center;
+    margin-bottom: 47px;
+}
+
+.popups__log_in__social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+.popups__log_in__google {
+    margin-right: 45px;
+}
+
+.popups__log_in__input {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px 15px 20px;
+    width: 473px;
+    height: 55px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 41px 19px 41px;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.popups__log_in__button {
+    font-weight: bold;
+    width: 473px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #FF8514;
+    border-radius: 15px;
+    padding: 14px 71px;
+    outline: none;
+    border: none;
+    margin: 31px 41px 20px 41px;
+}
+
+.popups__log_in__button:hover {
+    color: #FF8514;
+    background: #FFFFFF;
+    border: 3px solid #FF8514;
+    padding: 12px 68px;
+    cursor: pointer;
+}
+
+.popups__log_in__text__bottom {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #FF8514;
+    margin: 0 133px 105px 134px;
+}
+
+.popups__log_in__text__pass {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #FF8514;
+    text-align: right;
+    margin-right: 41px;
+}
+
+/*------------confirmation------------*/
+
+.confirmation {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 447px;
+    height: 390px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.popups__confirmation__exit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 17px 29px 0 0;
+}
+
+.popups__confirmation__img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.popups__confirmation__text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    color: #FF8514;
+    width: 340px;
+    height: 90px;
+    margin: 0 53px 0 54px;
+}
+
+/*------------user------------*/
+
+.user {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 447px;
+    height: 390px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.user__exit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 17px 29px 0 0;
+}
+
+.user__content__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.user__content {
+    display: flex;
+}
+
+.user__content__top {
+    display: flex;
+    flex-direction: column;
+}
+
+.user__content__img {
+    margin: 0 32px 37px 55px;
+}
+
+.user__content__location {
+    display: flex;
+    margin-top: 15px;
+}
+
+.user__content__location__img {
+    margin-right: 10px;
+}
+
+.user__content__city {
+    font-size: 18px;
+    line-height: 25px;
+    color: #FF8514;
+}
+
+.user__title {
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.8);
+    margin-left: 55px;
+    margin-bottom: 8px;
+}
+
+.user__text {
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin-left: 55px;
+    margin-bottom: 36px;
+}
+
+/*------------password------------*/
+
+.password {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 447px;
+    height: 390px;
+    border-radius: 25px;
+    margin-bottom: 50px;
+}
+
+.password__exit {
+    display: flex;
+    justify-content: flex-end;
+    margin: 17px 29px 0 0;
+}
+
+.password__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin: 10px 124px 37px 124px;
+}
+
+.password__text {
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0 89px 18px 49px;
+}
+
+.password__input {
+    display: flex;
+    align-items: center;
+    padding: 15px 10px 15px 20px;
+    width: 350px;
+    height: 61px;
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 0 41px 19px 41px;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.password__button {
+    font-weight: bold;
+    width: 350px;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    background: #FF8514;
+    border-radius: 15px;
+    padding: 14px 71px;
+    outline: none;
+    border: none;
+    margin: 0 41px 20px 41px;
+}
+
+.password__button:hover {
+    color: #FF8514;
+    background: #FFFFFF;
+    border: 3px solid #FF8514;
+    padding: 12px 68px;
+    cursor: pointer;
+}
+
+.password__text__bottom {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration-line: underline;
+    color: #FF8514;
+    margin-left: 82px;
+}

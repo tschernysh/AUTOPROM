@@ -11,6 +11,7 @@ import Blog from "./components/Blog/Blog";
 import ProductCard from "./components/ProductCard/ProductCard";
 import BlogItem from "./components/BlogItem/BlogItem";
 import Error404 from "./components/Error404/Error404";
+import Popups from "./components/Popups/Popups";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/Blog' render={() => <Blog />}/>
         <Route path='/BlogItem' render={() => <BlogItem />}/>
         <Route path='/Error404' render={() => <Error404 />}/>
+      <Route path='/Popups' render={() => <Popups />}/>
       {/*</div>*/}
       <Footer />
     </div>
