@@ -7,6 +7,9 @@ import b from "../Services/Serve/Serve.module.css";
 import Confirmation from '../../../src/common/img/Confirmation.png'
 import User from '../../../src/common/img/user.png'
 import CityMarker from '../../../src/common/img/CityMarker.png'
+import Star from "../../common/img/star.png";
+import HollowStar from "../../common/img/hollowStar.png";
+import Alex from "../../common/img/Alex.png";
 
 
 const Popups = (props) => {
@@ -132,6 +135,95 @@ const Popups = (props) => {
                 <input className={s.password__button} type="submit" value="Продолжить"/>
                 <div className={s.password__text__bottom}>
                     Вернуться на страницу входа
+                </div>
+            </div>
+            {/*------------delivery------------*/}
+            <div className={s.delivery}>
+                <div className={s.delivery__exit}>
+                    <img src={Exit}/>
+                </div>
+                <div className={s.delivery__title}>
+                    Доставка
+                </div>
+                <div className={s.delivery__post}>
+                    Самовывоз
+                </div>
+                <div className={s.delivery__text}>
+                    9:00 - 18:00
+                    <br></br>
+                    ул. Никольско-Слободская, 6Г
+                    (возле ст.м. Левобережная)
+                </div>
+                <div className={s.delivery__post}>
+                    Новая почта
+                </div>
+                <div className={s.delivery__text}>
+                    Срок: 1- 3 дня
+                    <br></br>
+                    Стоимость - по тарифам НП
+                </div>
+            </div>
+            {/*-----------review------------*/}
+            <div className={s.review}>
+                <div className={s.review__exit}>
+                    <img src={Exit}/>
+                </div>
+                <div className={s.review__title}>
+                    Оставьте свой отзыв
+                </div>
+                <div className={s.review__name}>
+                    Имя
+                </div>
+                <input className={s.review__name__input} value='Иван'/>
+                <div className={s.review__city}>
+                    Город
+                </div>
+                <input className={s.review__city__input} value='Киев'/>
+                <div className={s.review__review}>
+                    Отзыв
+                </div>
+                <textarea className={s.review__name__review} value='Текст'/>
+                <div className={s.review__rating}>
+                    Оценка
+                </div>
+                <div className={s.review__rating__star}>
+                    <img src={HollowStar} alt=""/>
+                    <img src={HollowStar} alt=""/>
+                    <img src={HollowStar} alt=""/>
+                    <img src={HollowStar} alt=""/>
+                    <img src={HollowStar} alt=""/>
+                </div>
+                <input className={s.review__button} type="submit" value="Добавить отзыв"/>
+            </div>
+            {/*------------accepted__review------------*/}
+            <div className={s.accepted__review}>
+                <div className={s.accepted__review__exit}>
+                    <img src={Exit}/>
+                </div>
+                <div className={s.accepted__review__content}>
+                    <div className={s.accepted__review__item__img}>
+                        <img src={Alex}/>
+                    </div>
+                    <div className={s.accepted__review__item}>
+                        <div className={s.accepted__review__name}>
+                            Алексей
+                        </div>
+                        <div className={s.accepted__review__city}>
+                            Киев
+                        </div>
+                    </div>
+                </div>
+                <div className={s.accepted__review__rating__star}>
+                    <img src={Star} alt=""/>
+                    <img src={Star} alt=""/>
+                    <img src={Star} alt=""/>
+                    <img src={Star} alt=""/>
+                    <img src={Star} alt=""/>
+                </div>
+                <div className={s.accepted__review__text}>
+                    Постоянно покупаю в данном сервисе и меня все устраивает. Быстрая доставка и всегда вовремя.
+                    Несомненно "AutoProm" лидер в своей сфере. Посоветовал и дал контакты всем своим знакомым. С
+                    уверенностью скажу, что буду обращаться еще не один раз. Спасибо!
                 </div>
             </div>
         </div>
