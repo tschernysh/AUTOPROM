@@ -1,0 +1,40 @@
+.error404 {
+    width: 100%;
+    min-height: 1200px;
+    height: 100%;
+    background: url("../../../src/common/img/Error404__background.png") no-repeat 100%;
+    background-size: contain;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error404__title {
+    font-weight: 600;
+    font-size: 185.521px;
+    line-height: 253px;
+    color: #FF5555;
+    margin-top: 60px;
+}
+
+.error404__text {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #272522;
+    margin-bottom: 27px;
+}
+
+.error404__link {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #FF8514;
+}
+
+.error404__link :visited{
+    text-decoration-line: underline;
+    color: #FF8514;
+}
