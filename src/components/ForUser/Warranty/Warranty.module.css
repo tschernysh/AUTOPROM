@@ -41,3 +41,28 @@
 .warranty__item__second {
     margin-left: 10%;
 }
+
+@media (max-width: 1360px) {
+    .warranty {
+        flex-wrap: wrap;
+    }
+
+    .warranty__title {
+        margin-left: 5%;
+    }
+
+    .warranty__item__title {
+        margin-left: 5%;
+    }
+
+    .warranty__item__text__first,
+    .warranty__item__text__second {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 800px) {
+    .warranty {
+        display: none;
+    }
+}

@@ -2,6 +2,17 @@ import React from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
 import ForUser from "../ForUser/ForUser";
+import HeaderElement1 from "../../common/img/Header__subSubBlock_element_1.png"
+import HeaderElement2 from "../../common/img/Header__subSubBlock_element_2.png"
+import HeaderElement3 from "../../common/img/Header__subSubBlock_element_3.png"
+import HeaderElement4 from "../../common/img/Header__subSubBlock_element_4.png"
+import HeaderElement5 from "../../common/img/Header__subSubBlock_element_5.png"
+import HeaderElement6 from "../../common/img/Header__subSubBlock_element_6.png"
+import HeaderElement7 from "../../common/img/Header__subSubBlock_element_7.png"
+import HeaderElement8 from "../../common/img/Header__subSubBlock_element_8.png"
+import HeaderElement9 from "../../common/img/Header__subSubBlock_element_9.png"
+import HeaderElement10 from "../../common/img/Header__subSubBlock_element_10.png"
+import HeaderElement11 from "../../common/img/Header__subSubBlock_element_11.png"
 
 const Header = (props) => {
 
@@ -44,7 +55,7 @@ const Header = (props) => {
                             <nav className={s.Header__list_nav}>
                                 <li><NavLink to='/' >Главная</NavLink></li>
 
-                                <li><a href="#">Каталог<span className={s.Header__list_nav_arrow}></span></a>
+                                <li><NavLink to='/Catalog'>Каталог<span className={s.Header__list_nav_arrow}></span></NavLink>
                                     <ul className={s.Header__list_sublist}>
                                         <li>
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
@@ -60,28 +71,28 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_1}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_8.png" alt=""/>
+                                                    <img src={HeaderElement8} alt=""/>
                                                         <div>
                                                             <a href="#">Автомобильные компрессоры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_9.png" alt=""/>
+                                                    <img src={HeaderElement9} alt=""/>
                                                         <div>
                                                             <a href="#">Домкраты и опоры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_10.png" alt=""/>
+                                                    <img src={HeaderElement10} alt=""/>
                                                         <div>
                                                             <a href="#">Слесарный инструмент</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_11.png" alt=""/>
+                                                    <img src={HeaderElement11} alt=""/>
                                                         <div>
                                                             <a href="#">Диагностическое оборудование</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
@@ -100,49 +111,49 @@ const Header = (props) => {
                                             <span className={s.Header__list_nav_subArrow}></span>
                                             <div className={s.Header__list_subSublist_wrap_2}>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
+                                                    <img src={HeaderElement1} alt=""/>
                                                         <div>
                                                             <a href="#">FM Трансмиттеры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_2.png" alt=""/>
+                                                    <img src={HeaderElement2} alt=""/>
                                                         <div>
                                                             <a href="#">Автоакустика</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_3.png" alt=""/>
+                                                    <img src={HeaderElement3} alt=""/>
                                                         <div>
                                                             <a href="#">Автомагнитолы</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_4.png" alt=""/>
+                                                    <img src={HeaderElement4} alt=""/>
                                                         <div>
                                                             <a href="#">Автомобильные телевизоры</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_5.png" alt=""/>
+                                                    <img src={HeaderElement5} alt=""/>
                                                         <div>
                                                             <a href="#">Антенны</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_6.png" alt=""/>
+                                                    <img src={HeaderElement6} alt=""/>
                                                         <div>
                                                             <a href="#">Переходные рамки</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>
                                                         </div>
                                                 </div>
                                                 <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_7.png" alt=""/>
+                                                    <img src={HeaderElement7} alt=""/>
                                                         <div>
                                                             <a href="#">Усилители</a>
                                                             <span className={s.Header__list_nav_subSubArrow}></span>

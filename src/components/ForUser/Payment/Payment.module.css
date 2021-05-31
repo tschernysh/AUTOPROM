@@ -16,6 +16,7 @@
 .payment__items {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .payment__item__title {
@@ -46,4 +47,39 @@
 
 .payment__item__text__third {
     max-width: 350px;
+}
+
+@media (max-width: 1360px) {
+    .payment__title {
+        margin-left: 5%;
+    }
+
+    .payment__item__title {
+        margin-left: 5%;
+    }
+
+    .payment__item__text__first,
+    .payment__item__text__second,
+    .payment__item__text__third{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 900px) {
+    .payment__items {
+        justify-content: start;
+    }
+
+    .payment__item__title {
+        font-size: 20px;
+        line-height: 140%;
+    }
+
+    .payment__item__text__first,
+    .payment__item__text__second,
+    .payment__item__text__third{
+        font-size: 16px;
+        line-height: 140%;
+        margin-right: 5%;
+    }
 }
