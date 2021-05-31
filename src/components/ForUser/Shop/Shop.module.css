@@ -1,5 +1,6 @@
 .shop__background {
-    background-image: url("/src/common/img/ShopBackground.png") ;
+    background: url("/src/common/img/ShopBackground.png") no-repeat;
+    background-size: contain;
     height: 765px;
     width: 100%;
     display: flex;
@@ -42,4 +43,74 @@
     color: #FFC60B;
     max-width: 620px;
     margin-top: 20px;
+}
+
+@media (max-width: 1100px) {
+    .shop__background {
+        justify-content: end;
+        padding: 0;
+    }
+
+    .shop__top__text {
+        margin-top: 5%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .shop__background {
+        height: 600px;
+    }
+}
+
+@media (max-width: 850px) {
+    .shop__background {
+        height: 500px;
+    }
+
+    .shop__title {
+        font-size: 20px;
+        line-height: 115%;
+        max-width: 256px;
+    }
+
+    .shop__price__text,
+    .shop__price__text2 {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .shop__gift {
+        font-size: 20px;
+        line-height: 27px;
+        max-width: 194px;
+    }
+
+    .shop__price__line {
+        margin-top: 5%;
+        margin-left: 3px;
+        margin-right: 3px;
+    }
+
+    .shop__price__line img {
+        max-width: 10px;
+    }
+}
+
+@media (max-width: 650px) {
+    .shop__background {
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    .shop__background {
+        height: 300px;
+    }
+}
+
+@media (max-width: 413px) {
+    .shop__background {
+        height: 250px;
+    }
 }

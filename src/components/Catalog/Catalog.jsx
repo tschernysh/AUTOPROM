@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Catalog.module.css'
-import b from "../Blog/Blog.module.css";
 import Transmitter from '../../common/img/Transmitter.png'
 import CarAcoustics from '../../common/img/Car_acoustics.png'
 import CarRadios from '../../common/img/Car_radios.png'

@@ -1,5 +1,5 @@
 .about__background {
-    background-image: url("/src/common/img/About__background.png") ;
+    background: url("/src/common/img/About__background.png") no-repeat bottom;
     height: 380px;
     width: 100%;
     display: flex;
@@ -45,4 +45,38 @@
     color: #FFC60B;
     max-width: 250px;
     margin-top: 20px;
+}
+
+
+@media (max-width: 1400px) {
+    .container{
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about__title {
+        font-size: 20px;
+        line-height: 115%;
+    }
+
+    .about__price__text,
+    .about__price__text2 {
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    .about__top__text {
+        margin-right: 5%;
+        margin-top: 15%;
+    }
+
+    .about__price__line {
+        margin-top: 4%;
+    }
+
+    .about__price__line img{
+        width: 10px;
+    }
 }

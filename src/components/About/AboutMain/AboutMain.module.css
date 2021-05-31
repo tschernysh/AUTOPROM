@@ -40,3 +40,19 @@
 .about__main__content__img {
     padding-bottom: 40px;
 }
+
+@media (max-width: 1360px) {
+    .about__main {
+        margin-left: 5%;
+    }
+}
+
+@media (max-width: 950px) {
+    .about__main {
+        margin-left: 5%;
+    }
+
+    .about__main__title {
+        display: none;
+    }
+}

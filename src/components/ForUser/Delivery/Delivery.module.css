@@ -33,3 +33,37 @@
     color: rgba(0, 0, 0, 0.9);
     max-width: 690px;
 }
+
+
+@media (max-width: 1360px) {
+    .delivery {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media (max-width: 850px) {
+    .delivery__title {
+        font-size: 22px;
+        line-height: 30px;
+        margin: 0;
+    }
+
+    .delivery__item__title {
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 30px;
+    }
+
+    .delivery__item__text,
+    .delivery__item__text__second {
+        font-size: 16px;
+        line-height: 140%;
+        max-width: 374px;
+        margin-right: 0;
+    }
+
+    .delivery__item {
+        flex-direction: column;
+    }
+}
