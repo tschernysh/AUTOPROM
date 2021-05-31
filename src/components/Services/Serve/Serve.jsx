@@ -31,9 +31,9 @@ const Serve = (props) => {
                         <div className={b.serve__content__item__right__other}>
                             <div className={b.serve__content__item__right__other__price}>
                                 Цена:
-                            </div>
-                            <div className={b.serve__content__item__right__other__cost}>
-                                от 1 000 грн
+                                <div className={b.serve__content__item__right__other__cost}>
+                                    от 1 000 грн
+                                </div>
                             </div>
                             <input className={b.serve__content__item__right__other__cost__button} type="submit"
                                    value="Заказать услугу"/>
@@ -61,9 +61,9 @@ const Serve = (props) => {
                         <div className={b.serve__content__item__right__other}>
                             <div className={b.serve__content__item__right__other__price}>
                                 Цена:
-                            </div>
-                            <div className={b.serve__content__item__right__other__cost}>
-                                от 1 400 грн
+                                <div className={b.serve__content__item__right__other__cost}>
+                                    от 1 400 грн
+                                </div>
                             </div>
                             <input className={b.serve__content__item__right__other__cost__button} type="submit"
                                    value="Заказать услугу"/>
@@ -89,9 +89,9 @@ const Serve = (props) => {
                         <div className={b.serve__content__item__right__other}>
                             <div className={b.serve__content__item__right__other__price}>
                                 Цена:
-                            </div>
-                            <div className={b.serve__content__item__right__other__cost}>
-                                от 1 200 грн
+                                <div className={b.serve__content__item__right__other__cost}>
+                                    от 1 200 грн
+                                </div>
                             </div>
                             <input className={b.serve__content__item__right__other__cost__button} type="submit"
                                    value="Заказать услугу"/>
