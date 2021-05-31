@@ -1,0 +1,39 @@
+.container{
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.cart__path{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 40px 0px 30px;
+}
+.cart__delivery{
+    background-color: red;
+    width: 100%;
+    padding: 41px 0px 48px 43px;
+}
+.cart__delivery>h5{
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 33px;
+}
+.cart__block{
+    display: flex;
+}
+.cart__block>div{
+    width: 50%;
+}
+.cart__delivery_radio div input{
+    width: 24px;
+    height: 24px;
+    border: 2px solid #C4C4C4;
+}
+.cart__delivery_radio div input:active{
+
+}
