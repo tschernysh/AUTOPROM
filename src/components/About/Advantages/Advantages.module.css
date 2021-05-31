@@ -37,3 +37,23 @@
     height: 35px;
     padding-left: 40px;
 }
+
+@media (max-width: 1150px) {
+    .about__advantages__nav {
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about__advantages__title {
+        margin-left: 5%;
+    }
+
+    .about__advantages {
+        height: 588px;
+    }
+
+    .about__advantages__nav li{
+        margin-bottom: 35px;
+    }
+}

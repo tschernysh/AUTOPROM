@@ -1,5 +1,6 @@
 .services__background {
-    background-image: url("/src/common/img/ServicesBackground__background.png") ;
+    background: url("/src/common/img/ServicesBackground__background.png") no-repeat bottom;
+    background-position: unset;
     height: 530px;
     width: 100%;
     display: flex;
@@ -47,4 +48,44 @@
     color: #FFC60B;
     max-width: 500px;
     margin-top: 20px;
+}
+
+@media (max-width: 1300px) {
+    .services__background__title {
+        font-size: 20px;
+        line-height: 115%;
+        max-width: 253px;
+    }
+
+    .services__background__price__text,
+    .services__background__price__text2 {
+        font-size: 12px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+
+    .services__background__gift {
+        font-size: 20px;
+        line-height: 27px;
+        max-width: 194px;
+    }
+
+    .services__background__top__text {
+        margin-top: 5%;
+    }
+
+    .services__background {
+       max-height: 350px;
+    }
+
+    .services__background__price__line {
+        margin-top: 5%;
+        margin-left: 3px;
+        margin-right: 3px;
+        line-height: 16px;
+    }
+
+    .services__background__price__line img {
+        width: 10px;
+    }
 }
