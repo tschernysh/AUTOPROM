@@ -44,7 +44,7 @@ const Header = (props) => {
                             <nav className={s.Header__list_nav}>
                                 <li><NavLink to='/' >Главная</NavLink></li>
 
-                                <li><a href="#">Каталог<span className={s.Header__list_nav_arrow}></span></a>
+                                <li><NavLink to='/Catalog'>Каталог<span className={s.Header__list_nav_arrow}></span></NavLink>
                                     <ul className={s.Header__list_sublist}>
                                         <li>
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none"

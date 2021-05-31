@@ -12,6 +12,7 @@ import ProductCard from "./components/ProductCard/ProductCard";
 import BlogItem from "./components/BlogItem/BlogItem";
 import Error404 from "./components/Error404/Error404";
 import Popups from "./components/Popups/Popups";
+import Catalog from "./components/Catalog/Catalog";
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
         <Route path='/Blog' render={() => <Blog />}/>
         <Route path='/BlogItem' render={() => <BlogItem />}/>
         <Route path='/Error404' render={() => <Error404 />}/>
-      <Route path='/Popups' render={() => <Popups />}/>
+        <Route path='/Popups' render={() => <Popups />}/>
+        <Route path='/Catalog' render={() => <Catalog />}/>
       {/*</div>*/}
       <Footer />
     </div>
