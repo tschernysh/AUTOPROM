@@ -14,6 +14,7 @@ import Error404 from "./components/Error404/Error404";
 import Popups from "./components/Popups/Popups";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Catalog from "./components/Catalog/Catalog";
+import Subcategory from "./components/Subcategory/Subcategory";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/popups' render={() => <Popups />}/>
         <Route path='/cart' render={() => <ShoppingCart />}/>
         <Route path='/catalog' render={() => <Catalog />}/>
+        <Route path='/subcategory' render={() => <Subcategory />}/>
       {/*</div>*/}
       <Footer />
     </div>
