@@ -1,5 +1,6 @@
 import s from './ShoppingCart.module.css'
 import {useState} from "react";
+import ProductPhoto from '../../common/img/product_1.png'
 
 const ShoppingCart = () => {
     const [info, setInfo] = useState(
@@ -155,9 +156,39 @@ const ShoppingCart = () => {
 
                             <div className={s.cart__product_item}>
                                 <div className={s.cart__product_photo}>
-                                    <img src="" alt=""/>
+                                    <img src={ProductPhoto} alt=""/>
                                 </div>
-                                <div className="">
+                                <div className={s.product__info_wrapper}>
+                                    <div className={s.cart__product_info}>
+                                        <p>Фара передняя Hyundai Getz</p>
+                                        <p>3 578 ₴</p>
+                                    </div>
+                                    <div className={s.cart__product_count}>
+                                        <p>1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={s.cart__product_item}>
+                                <div className={s.cart__product_photo}>
+                                    <img src={ProductPhoto} alt=""/>
+                                </div>
+                                <div className={s.product__info_wrapper}>
+                                    <div className={s.cart__product_info}>
+                                        <p>Фара передняя Hyundai Getz</p>
+                                        <p>3 578 ₴</p>
+                                    </div>
+                                    <div className={s.cart__product_count}>
+                                        <p>1</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={s.cart__product_item}>
+                                <div className={s.cart__product_photo}>
+                                    <img src={ProductPhoto} alt=""/>
+                                </div>
+                                <div className={s.product__info_wrapper}>
                                     <div className={s.cart__product_info}>
                                         <p>Фара передняя Hyundai Getz</p>
                                         <p>3 578 ₴</p>
@@ -170,9 +201,9 @@ const ShoppingCart = () => {
 
                         </div>
 
-                        <div className="product__cart_insum">
+                        <div className={s.product__cart_insum}>
                             <h5>Сумма к оплате</h5>
-                            <div className="">
+                            <div className={s.product__cart_insum_info}>
                                 <p>
                                     <span>Всего:</span>
                                     <span>10 734 ₴</span>
@@ -188,9 +219,10 @@ const ShoppingCart = () => {
                             </div>
                         </div>
 
-                        <div className="product__cart_btns">
-                            <button></button>
-                            <button></button>
+                        <div className={s.product__cart_btns}>
+                            <button>Вернуться к покупкам</button>
+                            <br/>
+                            <button>Оформить заказ</button>
                         </div>
 
                     </div>
