@@ -3,13 +3,13 @@ import Star from '../../../../common/img/star.png'
 import HollowStar from '../../../../common/img/hollowStar.png'
 import ElBestsellers from '../../../../common/img/elementFromBestsellers_1.png'
 
-const BestsellersItem = () => {
+const BestsellersItem = (props) => {
     return (
         <div className={s.mainPage__bestsellers_element}>
-            <div className={s.mainPage__bestsellers_element_top}>
+            {!props.subcategory && <div className={s.mainPage__bestsellers_element_top}>
                 <div>Хит</div>
                 <div>-10%</div>
-            </div>
+            </div>}
             <div className={s.mainPage__bestsellers_element_content}>
                 <div className={s.mainPage__bestsellers_element_content_title}>Фара передняя Hyundai</div>
                 <div className={s.mainPage__bestsellers_element_content_comment}>

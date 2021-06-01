@@ -1,0 +1,64 @@
+.subcategory__filter{
+    width: 325px;
+    padding: 28px 95px 240px 29px;
+    background-color: #fff;
+    box-sizing: border-box;
+    align-self: flex-start;
+}
+.subcategory__price p:nth-child(1){
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.subcategory__price p:nth-child(2){
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+.subcategory__price input{
+    width: 184px;
+    margin-bottom: 40px;
+}
+.subcategory__available p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.subcategory__available div{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.subcategory__available div span{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 5px;
+}
+
+.popups__registration__checkbox{
+    display: none;
+}
+.popups__registration__checkbox + label{
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border: 2px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.popups__registration__checkbox + label:before{
+    font-size: 20px;
+}
+
+.popups__registration__checkbox +label:after {
+
+}
+.popups__registration__checkbox:checked + label{
+    border: 2px solid #FF8514;
+    background: url("../../../common/img/Registration__checkbox.png") no-repeat center;
+}
