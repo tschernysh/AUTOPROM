@@ -3,10 +3,11 @@ import BestsellersItem from "../../Main/Bestsellers/BestsellersItem/BestsellersI
 import {ReactComponent as ArrowLeft} from "../../../common/icons/arrow-left.svg";
 import {ReactComponent as ArrowRight} from "../../../common/icons/arrow-right.svg";
 import {useState} from "react";
+import ProductSeen from "../../ProductCard/ProductSeen/ProductSeen";
 
 const SubcategoryTemplate = () => {
     const [page, setPage] = useState(1)
-
+    console.log(page)
     return(
         <div className={s.template}>
             <div className={s.template__title}>
@@ -37,11 +38,11 @@ const SubcategoryTemplate = () => {
             </div>
             <div className={s.template__pagination}>
                 <ArrowLeft className={page-1 === 0 ? s.arrow__disable : ''} onClick={() => page-1 !== 0 ? setPage(page-1) : null}/>
-                <span className={page ? s.active__page : null} onClick={() => setPage(page)}>{page}</span>
-                <span className={page === page +1 ? s.active__page : null} onClick={() => setPage(page +1)}>{page +1}</span>
-                <span className={page === page +2 ? s.active__page : null} onClick={() => setPage(page +2)}>{page +2}</span>
-                <span className={page === page +3 ? s.active__page : null} onClick={() => setPage(page +3)}>{page +3}</span>
-                <span className={page === page +4 ? s.active__page : null} onClick={() => setPage(page +4)}>{page +4}</span>
+                <span className={page === (page >= 3 ? page-2 : page) ? s.active__page : null} onClick={() => setPage(page)}>{page >= 3 ? page-2 : page}</span>
+                <span className={page === (page >= 3 ? page-1 : page+1) ? s.active__page : null} onClick={() => setPage(page +1)}>{page >= 3 ? page-1 : page +1}</span>
+                <span className={page === (page >= 3 ? page : page+2) ? s.active__page : null} onClick={() => setPage(page +2)}>{page >= 3 ? page : page +2}</span>
+                <span className={page === (page >= 3 ? page+1 : page+3) ? s.active__page : null} onClick={() => setPage(page +3)}>{page >= 3 ? page+1 : page +3}</span>
+                <span className={page === (page >= 3 ? page+2 : page+4) ? s.active__page : null} onClick={() => setPage(page +4)}>{page >= 3 ? page+2 : page +4}</span>
                 <ArrowRight className={page+1 === 0 ? s.arrow__disable : ''} onClick={() => setPage(page+1)}/>
             </div>
         </div>

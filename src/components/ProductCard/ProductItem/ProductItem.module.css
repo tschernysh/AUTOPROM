@@ -133,6 +133,11 @@
     width: 137px;
     height: 103px;
     cursor: pointer;
+    border: 2px solid transparent;
+}
+.product__gallery img:nth-child(1){
+    width: 437px;
+    height: 329px;
 }
 .product__gallery_photo:nth-child(2){
     margin-right: 37px;
@@ -143,13 +148,17 @@
     background-color: transparent;
     cursor: pointer;
 }
-.product__gallery_photos button:nth-child(1){
+.arrows__left{
     left: -12%;
     top: 50%;
     transform: translate(50%,-50%);
 }
-.product__gallery_photos button:nth-child(4){
+.arrows__right{
     left: 70%;
     top: 50%;
     transform: translate(50%,-50%);
+}
+.gallery__active{
+    border: 2px solid #FF8514;
+    transition: all 0.5s ;
 }

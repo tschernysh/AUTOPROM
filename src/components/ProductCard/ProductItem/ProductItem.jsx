@@ -9,6 +9,9 @@ import {ReactComponent as ArrowLeft} from "../../../common/icons/arrow-left.svg"
 
 const ProductItem = () => {
 
+    const [gallery, setGallery] = useState([ProductPhoto, ProductPhoto2, ProductPhoto])
+    const [currentPhoto, setCurrentPhoto] = useState(0)
+
     return (
         <div className={s.product}>
             <div className={s.product__title}>
@@ -26,12 +29,18 @@ const ProductItem = () => {
             </div>
             <div className={s.product__block}>
                 <div className={s.product__gallery}>
-                    <img src={ProductPhoto} alt=""/>
+                    <img src={gallery[currentPhoto]} alt=""/>
                     <div className={s.product__gallery_photos}>
-                        <button><ArrowLeft/></button>
-                        <img src={ProductPhoto} className={s.product__gallery_photo}/>
-                        <img src={ProductPhoto2} className={s.product__gallery_photo}/>
-                        <button><ArrowRight/></button>
+                        <button className={s.arrows__left} ><ArrowLeft onClick={() => setCurrentPhoto(currentPhoto === 0 ? gallery.length-1 : currentPhoto-1 )} /></button>
+
+                        {gallery.map((el, index) => (index <= currentPhoto-1 || index > currentPhoto+1) ? null :
+                            <img onClick={() => setCurrentPhoto(index)}
+                                 src={el}
+                                 key={index}
+                                 className={`${s.product__gallery_photo} ${index === currentPhoto ? s.gallery__active : ''}`}/>
+                        )}
+
+                        <button className={s.arrows__right} ><ArrowRight onClick={() => setCurrentPhoto(currentPhoto === gallery.length-1 ? 0 : currentPhoto+1 )} /></button>
                     </div>
                 </div>
                 <div className={s.product__info}>
