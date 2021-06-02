@@ -444,16 +444,16 @@ const Header = (props) => {
 
                                 <li><NavLink to='/ForUser'>Пользователю<span className={s.Header__list_nav_arrow}></span></NavLink>
                                     <ul className={s.Header__list_nav_forUser}>
-                                        <li><a href="#">Доставка</a></li>
-                                        <li><a href="#">Оплата</a></li>
-                                        <li><a href="#">Гарантии</a></li>
+                                        <li><NavLink to='/'>Доставка</NavLink></li>
+                                        <li><NavLink to='/cart'>Оплата</NavLink></li>
+                                        <li><NavLink to=''>Гарантии</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to='/About' >О нас</NavLink></li>
-                                <li><NavLink to='/Services' >Услуги</NavLink></li>
-                                <li><NavLink to='/Blog'>Блог</NavLink></li>
-                                <li><NavLink to='/Error404'>404</NavLink></li>
-                                <li><NavLink to='/Popups'>Popups</NavLink></li>
+                                <li><NavLink to='/about' >О нас</NavLink></li>
+                                <li><NavLink to='/services' >Услуги</NavLink></li>
+                                <li><NavLink to='/blog'>Блог</NavLink></li>
+                                <li><NavLink to='/error404'>404</NavLink></li>
+                                <li><NavLink to='/popups'>Popups</NavLink></li>
                             </nav>
 
                         </div>
