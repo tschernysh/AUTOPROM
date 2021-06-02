@@ -4,12 +4,12 @@ import ProductPhoto from '../../common/img/product_1.png'
 
 const ShoppingCart = () => {
     const [info, setInfo] = useState(
-        {delivery: 'NP',
+        {delivery: 'Нова пошта',
                         name: '',
                         number: '',
                         email: '',
                         fullName: '',
-                        payment: 'imposed',
+                        payment: 'Наложенный платёж',
                         city: 'Киев',
                         division: '1 отделение'}
     )
@@ -27,14 +27,14 @@ const ShoppingCart = () => {
                         <div className={s.cart__delivery}>
                             <h5>1. Способ доставки</h5>
                             <div className={s.cart__delivery_radio}>
-                                <label onClick={() => setInfo({...info, delivery: 'self' })}>
-                                    <input checked={info.delivery === 'self'} name='type' type="radio"/>
-                                    <span className={`${s.radio__styled} ${info.delivery === 'self' ? s.radio__active : ''}`}></span>
+                                <label onClick={() => setInfo({...info, delivery: 'Самовывоз' })}>
+                                    <input checked={info.delivery === 'Самовывоз'} name='type' type="radio"/>
+                                    <span className={`${s.radio__styled} ${info.delivery === 'Самовывоз' ? s.radio__active : ''}`}></span>
                                     <span>Самовывоз</span>
                                 </label>
-                                <label onClick={() => setInfo({...info, delivery: 'NP' })}>
-                                    <input checked={info.delivery === 'NP'} name='type' type="radio"/>
-                                    <span className={`${s.radio__styled} ${info.delivery === 'NP' ? s.radio__active : ''}`}></span>
+                                <label onClick={() => setInfo({...info, delivery: 'Нова пошта' })}>
+                                    <input checked={info.delivery === 'Нова пошта'} name='type' type="radio"/>
+                                    <span className={`${s.radio__styled} ${info.delivery === 'Нова пошта' ? s.radio__active : ''}`}></span>
                                     <span>Нова пошта</span>
                                 </label>
                             </div>
@@ -42,14 +42,14 @@ const ShoppingCart = () => {
                                 <h5>Ваш адрес</h5>
                                 <p>
                                     <span>Город:</span>
-                                    <select className={s.styled__select} name={'city'} value={info.city}>
+                                    <select onChange={(e) => setInfo({...info, city: e.target.value})} className={s.styled__select} name={'city'} value={info.city}>
                                         <option value={"Винница"}>Винница</option>
                                         <option value={"Киев"}>Киев</option>
                                     </select>
                                 </p>
                                 <p>
                                     <span>Отделение №:</span>
-                                    <select className={s.styled__select} name={'division'} value={info.division}>
+                                    <select onChange={(e) => setInfo({...info, division: e.target.value})} className={s.styled__select} name={'division'} value={info.division}>
                                         <option value="1">1 Отделение</option>
                                         <option value="2">2 Отделение</option>
                                     </select>
@@ -62,19 +62,19 @@ const ShoppingCart = () => {
                             <div className={s.cart__name_forms}>
                                 <div className={s.name__form}>
                                     <p>Имя</p>
-                                    <input placeholder={'Иван'} type="text"/>
+                                    <input value={info.name} onChange={(e) => setInfo({...info, name: e.target.value})} placeholder={'Иван'} type="text"/>
                                 </div>
                                 <div className={s.name__form}>
                                     <p>Номер</p>
-                                    <input placeholder={'+380 66666666'} type="tel" />
+                                    <input value={info.number} onChange={(e) => setInfo({...info, number: e.target.value})} placeholder={'+380 66666666'} type="tel" />
                                 </div>
                                 <div className={s.name__form}>
                                     <p>E-mail</p>
-                                    <input placeholder={'@gmail.com'} type="email"/>
+                                    <input value={info.email} onChange={(e) => setInfo({...info, email: e.target.value})} placeholder={'@gmail.com'} type="email"/>
                                 </div>
                                 <div className={s.name__form}>
                                     <p>ФИО получателя</p>
-                                    <input placeholder={'Иванов Иван Иванович'} type="text"/>
+                                    <input value={info.fullName} onChange={(e) => setInfo({...info, fullName: e.target.value})} placeholder={'Иванов Иван Иванович'} type="text"/>
                                 </div>
                             </div>
                         </div>
@@ -83,10 +83,10 @@ const ShoppingCart = () => {
                             <h5>3. Способ оплаты</h5>
                             <div className={s.cart__payment_inputs}>
                                 <div className={s.cart__payment_input}>
-                                    <label onClick={() => setInfo({...info, payment: 'imposed' })}>
+                                    <label onClick={() => setInfo({...info, payment: 'Наложенный платёж' })}>
                                         <div>
-                                            <input checked={info.payment === 'imposed'} name='payment' type="radio"/>
-                                            <span className={`${s.radio__styled} ${info.payment === 'imposed' ? s.radio__active : ''}`}></span>
+                                            <input checked={info.payment === 'Наложенный платёж'} name='payment' type="radio"/>
+                                            <span className={`${s.radio__styled} ${info.payment === 'Наложенный платёж' ? s.radio__active : ''}`}></span>
                                         </div>
                                         <div>
                                             <span>Наложенный платеж</span>
@@ -95,10 +95,10 @@ const ShoppingCart = () => {
                                     </label>
                                 </div>
                                 <div className={s.cart__payment_input}>
-                                    <label onClick={() => setInfo({...info, payment: 'prepayment' })}>
+                                    <label onClick={() => setInfo({...info, payment: 'Предоплата' })}>
                                         <div>
-                                            <input checked={info.payment === 'prepayment'} name='payment' type="radio"/>
-                                            <span className={`${s.radio__styled} ${info.payment === 'prepayment' ? s.radio__active : ''}`}></span>
+                                            <input checked={info.payment === 'Предоплата'} name='payment' type="radio"/>
+                                            <span className={`${s.radio__styled} ${info.payment === 'Предоплата' ? s.radio__active : ''}`}></span>
                                         </div>
                                         <div>
                                             <span>Предоплата на карту</span>
@@ -107,10 +107,10 @@ const ShoppingCart = () => {
                                     </label>
                                 </div>
                                 <div className={s.cart__payment_input}>
-                                    <label onClick={() => setInfo({...info, payment: 'cash' })}>
+                                    <label onClick={() => setInfo({...info, payment: 'Наличными' })}>
                                         <div>
-                                            <input checked={info.payment === 'cash'} name='payment' type="radio"/>
-                                            <span className={`${s.radio__styled} ${info.payment === 'cash' ? s.radio__active : ''}`}></span>
+                                            <input checked={info.payment === 'Наличными'} name='payment' type="radio"/>
+                                            <span className={`${s.radio__styled} ${info.payment === 'Наличными' ? s.radio__active : ''}`}></span>
                                         </div>
                                         <div>
                                             <span>Наличными или картой в автосалоне</span>

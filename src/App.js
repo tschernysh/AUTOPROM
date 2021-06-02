@@ -34,6 +34,7 @@ function App() {
         <Route path='/cart' render={() => <ShoppingCart />}/>
         <Route path='/catalog' render={() => <Catalog />}/>
         <Route path='/subcategory' render={() => <Subcategory />}/>
+        <Route render={() => <Error404 />}/>
       {/*</div>*/}
       <Footer />
     </div>

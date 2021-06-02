@@ -16,36 +16,7 @@ const Popups = (props) => {
     return (
         <div className={s.popups}>
             {/*------------registration------------*/}
-            <div className={s.popups__registration}>
-                <div className={s.popups__registration__exit}>
-                    <img src={Exit}/>
-                </div>
-                <div className={s.popups__registration__text}>
-                    Регистрация
-                </div>
-                <div className={s.popups__registration__social}>
-                    <div className={s.popups__registration__google}>
-                        <img src={Google}/>
-                    </div>
-                    <div className={s.popups__registration__facebook}>
-                        <img src={Facebook}/>
-                    </div>
-                </div>
-                <input className={s.popups__registration__input} value='Имя'/>
-                <input className={s.popups__registration__input} value='Пароль'/>
-                <input className={s.popups__registration__input} value='E-mail'/>
-                <div className={s.popups__registration__bottom}>
-                    <input className={s.popups__registration__checkbox} type="checkbox" id="checkbox-id"/>
-                    <label className={s.popups__registration__confirm} For="checkbox-id"></label>
-                    <div className={s.popups__registration__confirm__text}>
-                        Я соглашаюсь c <a href='#'>условиями обработки данных</a>
-                    </div>
-                </div>
-                <input className={s.popups__registration__button} type="submit" value="Зарегистрироваться"/>
-                <div className={s.popups__registration__text__bottom}>
-                    У меня уже есть аккаунт
-                </div>
-            </div>
+
             {/*------------log in------------*/}
             <div className={s.popups__log_in}>
                 <div className={s.popups__log_in__exit}>
@@ -225,6 +196,41 @@ const Popups = (props) => {
                     Несомненно "AutoProm" лидер в своей сфере. Посоветовал и дал контакты всем своим знакомым. С
                     уверенностью скажу, что буду обращаться еще не один раз. Спасибо!
                 </div>
+            </div>
+        </div>
+    )
+}
+
+export const RegistrationPopup = () => {
+    return(
+        <div className={s.popups__registration}>
+            <div className={s.popups__registration__exit}>
+                <img src={Exit}/>
+            </div>
+            <div className={s.popups__registration__text}>
+                Регистрация
+            </div>
+            <div className={s.popups__registration__social}>
+                <div className={s.popups__registration__google}>
+                    <img src={Google}/>
+                </div>
+                <div className={s.popups__registration__facebook}>
+                    <img src={Facebook}/>
+                </div>
+            </div>
+            <input className={s.popups__registration__input} value='Имя'/>
+            <input className={s.popups__registration__input} value='Пароль'/>
+            <input className={s.popups__registration__input} value='E-mail'/>
+            <div className={s.popups__registration__bottom}>
+                <input className={s.popups__registration__checkbox} type="checkbox" id="checkbox-id"/>
+                <label className={s.popups__registration__confirm} htmlFor="checkbox-id"></label>
+                <div className={s.popups__registration__confirm__text}>
+                    Я соглашаюсь c <a href='#'>условиями обработки данных</a>
+                </div>
+            </div>
+            <input className={s.popups__registration__button} type="submit" value="Зарегистрироваться"/>
+            <div className={s.popups__registration__text__bottom}>
+                У меня уже есть аккаунт
             </div>
         </div>
     )
