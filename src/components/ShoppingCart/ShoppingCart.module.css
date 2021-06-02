@@ -136,6 +136,9 @@
     color: #000000B2;
     margin-bottom: 7px;
 }
+.name__form{
+    margin-bottom: 25px;
+}
 .name__form input{
     padding: 15px 20px;
     box-sizing: border-box;

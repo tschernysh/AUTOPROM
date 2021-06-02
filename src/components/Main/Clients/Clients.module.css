@@ -2,6 +2,9 @@
 .mainPage__OurClientsrecommend_wrap {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .mainPage__OurClientsrecommend_h1 {
@@ -39,4 +42,40 @@
 .mainPage__bestsellers_btn a:hover {
     color: #FFFFFF;
     background: #FF8514;
+}
+
+.mainPage__clients_title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainPage__bestsellers_dots{
+    background: #00000033;
+    width: 120px;
+    height: 2px;
+    display: flex;
+}
+.mainPage__bestsellers_dots span{
+    width: 40px;
+    height: 2px;
+}
+.active__dot{
+    background:  #00000099 !important;
+}
+.mainPage__OurClientsrecommend_wrap button{
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.left{
+    left: -3%;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.right{
+    right: -3%;
+    top: 50%;
+    transform: translate(0, -50%);
 }
