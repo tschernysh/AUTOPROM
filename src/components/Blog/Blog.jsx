@@ -33,11 +33,11 @@ const Blog = (props) => {
                                 </div>
                             </div>
                             <div className={b.blog__item__right__title}>
-                                Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
+                                Топовая Tesla Model S Plaid+ подорожала на 10 000 долларов
                             </div>
                             <div className={b.blog__item__right__text}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
-                                tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
+                                Не привлекая лишнего внимания, Tesla в очередной раз обновила онлайн-конфигуратор на
+                                американском сайте,
                             </div>
                             <div className={b.blog__item__right__more}>
                                 <NavLink to='/BlogItem'>Читать больше</NavLink>
@@ -62,11 +62,11 @@ const Blog = (props) => {
                                 </div>
                             </div>
                             <div className={b.blog__item__right__title}>
-                                Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
+                                В Sandero будут использовать смартфон вместо «магнитолы»
                             </div>
                             <div className={b.blog__item__right__text}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
-                                tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
+                                Система Media Control дебютирует на хэтчбеке Sandero третьего поколения. Для подключения
+                                своего смартфона в качестве «головы» водитель сможет
                             </div>
                             <div className={b.blog__item__right__more}>
                                 <a href='#'>Читать больше</a>
@@ -91,11 +91,11 @@ const Blog = (props) => {
                                 </div>
                             </div>
                             <div className={b.blog__item__right__title}>
-                                Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
+                                Mercedes-Benz C-Class
                             </div>
                             <div className={b.blog__item__right__text}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
-                                tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
+                                Mercedes-Benz C-класса уже около 40 лет представлен на рынке и является одним из самых
+                                популярных автомобилей немецкого бренда, - и по
                             </div>
                             <div className={b.blog__item__right__more}>
                                 <a href='#'>Читать больше</a>

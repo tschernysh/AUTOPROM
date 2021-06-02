@@ -1,7 +1,6 @@
 import React from "react";
 import s from './BlogItem.module.css'
 import BlogFirstContent from '../../common/img/BlogFirst__content.png'
-import b from "../Blog/Blog.module.css";
 import {NavLink} from "react-router-dom";
 import BlogSecond from '../../common/img/Blog__second.png'
 import BlogThird from '../../common/img/Blog__third.png'
