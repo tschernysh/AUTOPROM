@@ -31,7 +31,7 @@
     width: 50%;
 }
 .cart__block>div:nth-child(2){
-    width: 40%;
+   /* width: 40%;*/
 }
 .cart__delivery_radio label input{
     opacity: 0;
@@ -301,6 +301,14 @@
 
 @media (max-width: 1300px) {
     .cart__block {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
+
+    .cart__product {
+        width: 544px;
+    }
+}
+
+@media (max-width: 600px) {
+
 }
