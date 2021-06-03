@@ -16,6 +16,7 @@ import HeaderElement11 from "../../common/img/Header__subSubBlock_element_11.png
 import {ModalContext} from "../../common/context/ModalContext";
 import {RegistrationPopup} from "../Popups/RegistrationPopup";
 import {LoginPopup} from "../Popups/LoginPopup";
+import {CartPopup} from "../Popups/CartPopup";
 
 const Header = (props) => {
     const {modalVisibility, setModalVisibility, modalContent, setModalContent} = useContext(ModalContext)
@@ -516,7 +517,7 @@ const Header = (props) => {
                             </div>
 
                             <div className={s.Header__list_rightPartElement}>
-                                <a href="#">
+                                <NavLink to='/cart' href="#">
                                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -529,11 +530,11 @@ const Header = (props) => {
                                             d="M1.25 1.25H6.25L9.6 17.9875C9.71431 18.563 10.0274 19.0799 10.4844 19.4479C10.9415 19.8158 11.5134 20.0112 12.1 20H24.25C24.8366 20.0112 25.4085 19.8158 25.8656 19.4479C26.3226 19.0799 26.6357 18.563 26.75 17.9875L28.75 7.5H7.5"
                                             stroke="#272522" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
-                                </a>
-                                <NavLink to={'/cart'} className={s.Header__listElement}>
-                                    <a className={s.Header__list_rightPart_btnText} >3000₴</a>
-                                    <a className={s.Header__list_rightPart_btnSmallText} >1 товар</a>
                                 </NavLink>
+                                <div onClick={() => {setModalVisibility(true); setModalContent(() => CartPopup)}} className={s.Header__listElement}>
+                                    <a className={s.Header__list_rightPart_btnText} >3000₴</a>
+                                    <a  className={s.Header__list_rightPart_btnSmallText} >1 товар</a>
+                                </div>
                             </div>
 
                             {/*// <div className={s.Header__list_rightPartElement">*/}

@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import s from './App.module.css';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import Main from "./components/Main/Main";
 import About from './components/About/About';
 import Services from "./components/Services/Services";
@@ -30,20 +30,22 @@ function App() {
             <div className="App">
               {modalVisibility && <ModalWrapper setModalContent={setModalContent} setModalVisibility={setModalVisibility} modalContent={modalContent} modalVisibility={modalVisibility} />}
                 <Header/>
-                <Route exact path='/' render={() => <Main/>}/>
-                <Route path='/about' render={() => <About/>}/>
-                <Route path='/services' render={() => <Services/>}/>
-                <Route path='/forUser' render={() => <ForUser/>}/>
-                <Route path='/blog' render={() => <Blog/>}/>
-                <Route path='/product' render={() => <ProductCard/>}/>
-                <Route path='/ForUser' render={() => <ForUser/>}/>
-                <Route path='/blogItem' render={() => <BlogItem/>}/>
-                <Route path='/error404' render={() => <Error404/>}/>
-                <Route path='/popups' render={() => <Popups/>}/>
-                <Route path='/cart' render={() => <ShoppingCart/>}/>
-                <Route path='/catalog' render={() => <Catalog/>}/>
-                <Route path='/subcategory' render={() => <Subcategory/>}/>
-                <Route render={() => <Error404/>}/>
+                <Switch>
+                    <Route exact path='/' render={() => <Main/>}/>
+                    <Route path='/about' render={() => <About/>}/>
+                    <Route path='/services' render={() => <Services/>}/>
+                    <Route path='/forUser' render={() => <ForUser/>}/>
+                    <Route path='/blog' render={() => <Blog/>}/>
+                    <Route path='/product' render={() => <ProductCard/>}/>
+                    <Route path='/forUser' render={() => <ForUser/>}/>
+                    <Route path='/blogItem' render={() => <BlogItem/>}/>
+                    <Route path='/error404' render={() => <Error404/>}/>
+                    <Route path='/popups' render={() => <Popups/>}/>
+                    <Route path='/cart' render={() => <ShoppingCart/>}/>
+                    <Route path='/catalog' render={() => <Catalog/>}/>
+                    <Route path='/subcategory' render={() => <Subcategory/>}/>
+                    <Route path='*' exact render={() => <Error404/>}/>
+                </Switch>
                 <Footer/>
             </div>
         </ModalContext.Provider>

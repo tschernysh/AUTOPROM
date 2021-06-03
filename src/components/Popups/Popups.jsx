@@ -10,6 +10,7 @@ import CityMarker from '../../../src/common/img/CityMarker.png'
 import Star from "../../common/img/star.png";
 import HollowStar from "../../common/img/hollowStar.png";
 import Alex from "../../common/img/Alex.png";
+import Product from '../../common/img/product_1.png'
 
 
 const Popups = (props) => {
@@ -128,6 +129,8 @@ const Popups = (props) => {
                     уверенностью скажу, что буду обращаться еще не один раз. Спасибо!
                 </div>
             </div>
+
+
         </div>
     )
 }
