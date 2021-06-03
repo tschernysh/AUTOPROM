@@ -320,6 +320,29 @@
     display: none;
 }
 
+.cart__product_amount__cart{
+    margin-left: 21px;
+}
+.cart__product_amount__cart button{
+    border: none;
+    width: 34px;
+    height: 41px;
+    background: #F3F3F3;
+}
+.cart__product_amount__cart span{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #272522;
+    margin: 0 18px;
+}
+
+.product__cart_insum_info p span1{
+    color: #03903C;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30px;
+}
 
 @media (max-width: 1300px) {
     .cart__block {
@@ -328,6 +351,35 @@
 
     .cart__product {
         width: 544px;
+        margin-bottom: 20px;
+    }
+
+    .cart__product_amount__cart{
+        margin-left: 8px;
+    }
+
+    .product__cart_btns {
+        display: none;
+    }
+
+    .cart__delivery {
+        margin-left: 20px;
+        width: 544px;
+    }
+
+    .cart__name {
+        margin-left: 20px;
+        width: 462px;
+    }
+
+    .cart__payment {
+        margin-left: 20px;
+        width: 502px;
+    }
+
+    .cart__accept {
+        margin-left: 20px;
+        width: 502px;
     }
 }
 
@@ -337,6 +389,8 @@
         font-size: 22px;
         font-weight: 600;
         line-height: 30px;
+        margin-top: 16px;
+        position: absolute;
     }
 
     .cart__product_info p2 {
@@ -356,4 +410,60 @@
         margin-left: -150px;
     }
 
+    .cart__product_list {
+        padding: 0;
+    }
+
+    .cart__product {
+        margin: 0 20px 0 20px;
+        width: 373px;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .cart__path {
+        margin-left: 22px;
+    }
+
+    .product__cart_insum_info p{
+        width: 205px;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .cart__delivery {
+        width: 374px;
+        padding-right: 0;
+        margin-top: 20px;
+    }
+
+    .cart__delivery_address p{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .cart__delivery_address span {
+        margin-bottom: 5px;
+    }
+
+    .cart__name {
+        width: 331px;
+        padding-right: 0;
+    }
+
+    .cart__payment {
+        width: 326px;
+        padding: 24px;
+    }
+
+    .cart__payment_input {
+        margin-bottom: 10px;
+    }
+
+    .cart__accept {
+        width: 331px;
+    }
 }

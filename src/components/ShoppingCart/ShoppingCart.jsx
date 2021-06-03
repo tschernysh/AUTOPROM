@@ -185,7 +185,11 @@ const ShoppingCart = () => {
                                         <p1>3 578 ₴</p1>
                                     </div>
                                     <div className={s.cart__product_count}>
-                                        <p>1</p>
+                                        <div className={s.cart__product_amount__cart}>
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -201,7 +205,11 @@ const ShoppingCart = () => {
                                         <p1>3 578 ₴</p1>
                                     </div>
                                     <div className={s.cart__product_count}>
-                                        <p>1</p>
+                                        <div className={s.cart__product_amount__cart}>
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -217,7 +225,7 @@ const ShoppingCart = () => {
                                 </p>
                                 <p>
                                     <span>Скидка:</span>
-                                    <span>1 625 ₴</span>
+                                    <span1>1 625 ₴</span1>
                                 </p>
                                 <p>
                                     <span>К оплате:</span>
