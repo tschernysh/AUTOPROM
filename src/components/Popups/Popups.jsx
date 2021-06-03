@@ -18,31 +18,7 @@ const Popups = (props) => {
             {/*------------registration------------*/}
 
             {/*------------log in------------*/}
-            <div className={s.popups__log_in}>
-                <div className={s.popups__log_in__exit}>
-                    <img src={Exit}/>
-                </div>
-                <div className={s.popups__log_in__text}>
-                    Вход
-                </div>
-                <div className={s.popups__log_in__social}>
-                    <div className={s.popups__log_in__google}>
-                        <img src={Google}/>
-                    </div>
-                    <div className={s.popups__log_in__facebook}>
-                        <img src={Facebook}/>
-                    </div>
-                </div>
-                <input className={s.popups__log_in__input} value='Имя'/>
-                <input className={s.popups__log_in__input} value='Пароль'/>
-                <div className={s.popups__log_in__text__pass}>
-                    Забыли пароль?
-                </div>
-                <input className={s.popups__log_in__button} type="submit" value="Войти"/>
-                <div className={s.popups__log_in__text__bottom}>
-                    Я хочу зарегистрироваться
-                </div>
-            </div>
+
             {/*------------confirmation------------*/}
             <div className={s.confirmation}>
                 <div className={s.popups__confirmation__exit}>
@@ -92,22 +68,7 @@ const Popups = (props) => {
                 </div>
             </div>
             {/*------------password------------*/}
-            <div className={s.password}>
-                <div className={s.password__exit}>
-                    <img src={Exit}/>
-                </div>
-                <div className={s.password__title}>
-                    Забыли пароль?
-                </div>
-                <div className={s.password__text}>
-                    Введите ваш адрес электронной почты
-                </div>
-                <input className={s.password__input} value='E-mail'/>
-                <input className={s.password__button} type="submit" value="Продолжить"/>
-                <div className={s.password__text__bottom}>
-                    Вернуться на страницу входа
-                </div>
-            </div>
+
             {/*------------delivery------------*/}
             <div className={s.delivery}>
                 <div className={s.delivery__exit}>
@@ -135,37 +96,7 @@ const Popups = (props) => {
                 </div>
             </div>
             {/*-----------review------------*/}
-            <div className={s.review}>
-                <div className={s.review__exit}>
-                    <img src={Exit}/>
-                </div>
-                <div className={s.review__title}>
-                    Оставьте свой отзыв
-                </div>
-                <div className={s.review__name}>
-                    Имя
-                </div>
-                <input className={s.review__name__input} value='Иван'/>
-                <div className={s.review__city}>
-                    Город
-                </div>
-                <input className={s.review__city__input} value='Киев'/>
-                <div className={s.review__review}>
-                    Отзыв
-                </div>
-                <textarea className={s.review__name__review} value='Текст'/>
-                <div className={s.review__rating}>
-                    Оценка
-                </div>
-                <div className={s.review__rating__star}>
-                    <img src={HollowStar} alt=""/>
-                    <img src={HollowStar} alt=""/>
-                    <img src={HollowStar} alt=""/>
-                    <img src={HollowStar} alt=""/>
-                    <img src={HollowStar} alt=""/>
-                </div>
-                <input className={s.review__button} type="submit" value="Добавить отзыв"/>
-            </div>
+
             {/*------------accepted__review------------*/}
             <div className={s.accepted__review}>
                 <div className={s.accepted__review__exit}>
@@ -201,39 +132,5 @@ const Popups = (props) => {
     )
 }
 
-export const RegistrationPopup = () => {
-    return(
-        <div className={s.popups__registration}>
-            <div className={s.popups__registration__exit}>
-                <img src={Exit}/>
-            </div>
-            <div className={s.popups__registration__text}>
-                Регистрация
-            </div>
-            <div className={s.popups__registration__social}>
-                <div className={s.popups__registration__google}>
-                    <img src={Google}/>
-                </div>
-                <div className={s.popups__registration__facebook}>
-                    <img src={Facebook}/>
-                </div>
-            </div>
-            <input className={s.popups__registration__input} value='Имя'/>
-            <input className={s.popups__registration__input} value='Пароль'/>
-            <input className={s.popups__registration__input} value='E-mail'/>
-            <div className={s.popups__registration__bottom}>
-                <input className={s.popups__registration__checkbox} type="checkbox" id="checkbox-id"/>
-                <label className={s.popups__registration__confirm} htmlFor="checkbox-id"></label>
-                <div className={s.popups__registration__confirm__text}>
-                    Я соглашаюсь c <a href='#'>условиями обработки данных</a>
-                </div>
-            </div>
-            <input className={s.popups__registration__button} type="submit" value="Зарегистрироваться"/>
-            <div className={s.popups__registration__text__bottom}>
-                У меня уже есть аккаунт
-            </div>
-        </div>
-    )
-}
 
 export default Popups

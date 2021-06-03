@@ -15,30 +15,39 @@ import Popups from "./components/Popups/Popups";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Catalog from "./components/Catalog/Catalog";
 import Subcategory from "./components/Subcategory/Subcategory";
+import {ModalContext} from "./common/context/ModalContext";
+import {useState} from "react";
+import ModalWrapper from "./common/Modals/ModalWrapper";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      {/*<div className={s.container}>*/}
-        <Route exact path='/' render={() => <Main />} />
-        <Route path='/about' render={() => <About />} />
-        <Route path='/services' render={() => <Services />} />
-        <Route path='/forUser' render={() => <ForUser />}/>
-        <Route path='/blog' render={() => <Blog />}/>
-        <Route path='/product' render={() => <ProductCard />}/>
-        <Route path='/ForUser' render={() => <ForUser />}/>
-        <Route path='/blogItem' render={() => <BlogItem />}/>
-        <Route path='/error404' render={() => <Error404 />}/>
-        <Route path='/popups' render={() => <Popups />}/>
-        <Route path='/cart' render={() => <ShoppingCart />}/>
-        <Route path='/catalog' render={() => <Catalog />}/>
-        <Route path='/subcategory' render={() => <Subcategory />}/>
-        <Route render={() => <Error404 />}/>
-      {/*</div>*/}
-      <Footer />
-    </div>
-  );
+  const [modalVisibility, setModalVisibility] = useState(false)
+  const [modalContent, setModalContent] = useState(false)
+
+    console.log(modalVisibility,modalContent, 'DATA')
+
+    return (
+        <ModalContext.Provider value={{modalVisibility, setModalVisibility, modalContent, setModalContent}}>
+            <div className="App">
+              {modalVisibility && <ModalWrapper setModalContent={setModalContent} setModalVisibility={setModalVisibility} modalContent={modalContent} modalVisibility={modalVisibility} />}
+                <Header/>
+                <Route exact path='/' render={() => <Main/>}/>
+                <Route path='/about' render={() => <About/>}/>
+                <Route path='/services' render={() => <Services/>}/>
+                <Route path='/forUser' render={() => <ForUser/>}/>
+                <Route path='/blog' render={() => <Blog/>}/>
+                <Route path='/product' render={() => <ProductCard/>}/>
+                <Route path='/ForUser' render={() => <ForUser/>}/>
+                <Route path='/blogItem' render={() => <BlogItem/>}/>
+                <Route path='/error404' render={() => <Error404/>}/>
+                <Route path='/popups' render={() => <Popups/>}/>
+                <Route path='/cart' render={() => <ShoppingCart/>}/>
+                <Route path='/catalog' render={() => <Catalog/>}/>
+                <Route path='/subcategory' render={() => <Subcategory/>}/>
+                <Route render={() => <Error404/>}/>
+                <Footer/>
+            </div>
+        </ModalContext.Provider>
+    );
 }
 
 export default App;
