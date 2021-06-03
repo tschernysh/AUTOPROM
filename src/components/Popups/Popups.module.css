@@ -118,6 +118,40 @@
     margin: 0 142px 79px 154px;
 }
 
+@media (max-width: 590px) {
+    .popups__registration {
+        width: 414px;
+        height: 691px;
+    }
+
+    .popups__registration__input {
+        width: 374px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popups__registration__button {
+        width: 373px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popups__registration__text__bottom {
+        margin-left: 75px;
+        margin-right: 0;
+    }
+
+    .popups__registration__confirm {
+        margin-left: 33px;
+    }
+
+    .popups__registration__confirm__text {
+        font-size: 14px;
+        line-height: 19px;
+        margin-top: 6px;
+    }
+}
+
 /*------------log in------------*/
 
 .popups__log_in{
@@ -210,6 +244,30 @@
     color: #FF8514;
     text-align: right;
     margin-right: 41px;
+}
+
+@media (max-width: 590px) {
+    .popups__log_in {
+        width: 414px;
+        height: 617px;
+    }
+
+    .popups__log_in__input {
+        width: 374px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popups__log_in__button {
+        width: 373px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .popups__log_in__text__bottom {
+        margin-left: 63px;
+        margin-right: 0;
+    }
 }
 
 /*------------confirmation------------*/

@@ -116,3 +116,48 @@
     line-height: 38px;
     color: #272522;
 }
+
+@media (max-width: 1360px) {
+    .container {
+        margin: 0 5% 0 5%;
+        padding: 0;
+    }
+
+    .blog__first__content__image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .blog__first__items {
+        flex-direction: column;
+    }
+
+    .blog__first__item {
+        margin-bottom: 25px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .blog__first__menu {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .blog__first__content {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .blog__first__content__text {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+    }
+
+    .blog__first__item {
+        font-size: 18px;
+        line-height: 140%;
+    }
+}
