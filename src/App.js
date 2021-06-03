@@ -23,7 +23,6 @@ function App() {
   const [modalVisibility, setModalVisibility] = useState(false)
   const [modalContent, setModalContent] = useState(false)
 
-    console.log(modalVisibility,modalContent, 'DATA')
 
     return (
         <ModalContext.Provider value={{modalVisibility, setModalVisibility, modalContent, setModalContent}}>
