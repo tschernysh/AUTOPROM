@@ -1,10 +1,15 @@
 import s from './ProductFeedbackCard.module.css'
 import ProfilePhoto from '../../../../common/img/Alex.png'
 import Star from '../../../../common/img/star.png'
+import {ModalContext} from "../../../../common/context/ModalContext";
+import {useContext} from "react";
+import {ReviewPopup} from "../../../Popups/ReviewPopup";
 
 const ProductFeedbackCard = () => {
+    const {modalVisibility, setModalVisibility, modalContent, setModalContent} = useContext(ModalContext)
+
     return(
-        <div className={s.product__feedback_card}>
+        <div onClick={() => {setModalVisibility(true); setModalContent(() => ReviewPopup) }} className={s.product__feedback_card}>
             <div className={s.feedback__profile}>
                 <div className={s.profile__photo}>
                     <img src={ProfilePhoto} alt=""/>
