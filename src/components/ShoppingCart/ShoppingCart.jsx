@@ -161,7 +161,28 @@ const ShoppingCart = () => {
                                 <div className={s.product__info_wrapper}>
                                     <div className={s.cart__product_info}>
                                         <p>Фара передняя Hyundai Getz</p>
-                                        <p>3 578 ₴</p>
+                                        <p2>2005-2010 правая H4, мех. регул. 221-1141R-LD-E</p2>
+                                        <p1>3 578 ₴</p1>
+                                    </div>
+                                    <div className={s.cart__product_count}>
+                                        <div className={s.cart__product_amount__cart}>
+                                            <button>-</button>
+                                            <span>1</span>
+                                            <button>+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className={s.cart__product_item}>
+                                <div className={s.cart__product_photo}>
+                                    <img src={ProductPhoto} alt=""/>
+                                </div>
+                                <div className={s.product__info_wrapper}>
+                                    <div className={s.cart__product_info}>
+                                        <p>Фара передняя Hyundai Getz</p>
+                                        <p2>KW903 ELM327 Bluetooth 3.0 WIFI </p2>
+                                        <p1>3 578 ₴</p1>
                                     </div>
                                     <div className={s.cart__product_count}>
                                         <p>1</p>
@@ -176,22 +197,8 @@ const ShoppingCart = () => {
                                 <div className={s.product__info_wrapper}>
                                     <div className={s.cart__product_info}>
                                         <p>Фара передняя Hyundai Getz</p>
-                                        <p>3 578 ₴</p>
-                                    </div>
-                                    <div className={s.cart__product_count}>
-                                        <p>1</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className={s.cart__product_item}>
-                                <div className={s.cart__product_photo}>
-                                    <img src={ProductPhoto} alt=""/>
-                                </div>
-                                <div className={s.product__info_wrapper}>
-                                    <div className={s.cart__product_info}>
-                                        <p>Фара передняя Hyundai Getz</p>
-                                        <p>3 578 ₴</p>
+                                        <p2>2005-2010 правая H4, мех. регул. 221-1141R-LD-E</p2>
+                                        <p1>3 578 ₴</p1>
                                     </div>
                                     <div className={s.cart__product_count}>
                                         <p>1</p>
