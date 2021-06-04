@@ -206,3 +206,21 @@
     top: 50%;
     transform: translate(0, -50%);
 }
+
+@media (max-width: 650px) {
+    .mainPage__bestsellers {
+        margin:  0 5%;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .mainPage__bestsellers_dots {
+        display: none;
+    }
+}

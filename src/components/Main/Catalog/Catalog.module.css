@@ -56,3 +56,9 @@
     min-height: 250px;
 }
 
+@media (max-width: 900px) {
+    .mainPage__catalog {
+        margin: 0 5%;
+    }
+}
+

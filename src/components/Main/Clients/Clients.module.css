@@ -79,3 +79,25 @@
     top: 50%;
     transform: translate(0, -50%);
 }
+
+@media (max-width: 1200px) {
+    .mainPage__ourClientsrecommend {
+        margin: 0 5%;
+    }
+
+    .mainPage__bestsellers_dots {
+        display: none;
+    }
+
+    .mainPage__clients_title h1{
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+}

@@ -28,3 +28,11 @@
 .main__Page_OurServices_wrap > div > a {
     text-decoration: none;
 }
+
+@media (max-width: 1200px) {
+    .main__Page_OurServices_wrap {
+        flex-direction: column;
+    }
+
+    .main__Page_OurServices {}
+}

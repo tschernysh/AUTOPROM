@@ -94,3 +94,13 @@
 .mainPage__contentElement:hover>.mainPage__submitList {
     display: block;
 }
+
+@media (max-width: 900px) {
+    .mainPage__btnList {
+        width: 320px;
+    }
+
+    .mainPage__contentElement {
+        width: 320px;
+    }
+}

@@ -20,3 +20,21 @@
     margin: 141px 15px 32px 15px;
     text-align: center;
 }
+
+@media (max-width: 1400px) {
+    .main__Page_OurServices_Element {
+        width: 374px;
+        height: 250px;
+        margin-top: 2%;
+    }
+
+    .main__Page_OurServices_Element_text {
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 5px;
+        font-size: 20px;
+        line-height: 27px;
+        text-align: center;
+        width: 348px;
+        color: #FFFFFF;
+    }
+}
