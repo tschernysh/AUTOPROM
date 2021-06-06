@@ -187,7 +187,9 @@
         padding: 0;
         cursor: pointer;
     }
-
-
-
+}
+@media screen and (max-width: 1000px){
+    .mainPage__firstBlock_form_sending_form{
+        margin: 0 auto;
+    }
 }

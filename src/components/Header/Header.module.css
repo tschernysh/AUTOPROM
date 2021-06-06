@@ -3,6 +3,9 @@
     margin: 0 auto;
     padding: 0px 10px;
   }
+.Header__menu{
+  display: none;
+}
   .whiteBackgroud {
     width: 100%;
     background: #FFFFFF;
@@ -400,3 +403,102 @@
       margin-left: 8px;
     text-decoration: none;
   }
+
+@media screen and (max-width: 1250px) {
+  .Header__list_nav li {
+    font-size: 16px;
+  }
+  .Header__list_rightPartElement {
+    margin-left: 0px;
+  }
+  .Header__list_rightPartElement > a {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .Header__list_nav li {
+    font-size: 14px;
+  }
+  .Header__list_rightPartElement {
+    margin-left: 0px;
+  }
+  .Header__list_rightPartElement > a {
+    font-size: 14px;
+  }
+  .Header__list_rightPartElement> a > svg{
+    width: 25px;
+    height: 25px;
+  }
+  .Header__listElement > a {
+    font-size: 12px;
+  }
+  .Header__list_leftPart > svg{
+    width: 100px;
+    height: 30px;
+  }
+  .Header__list_nav li:hover ul{
+    left: -169px;
+    top: 36px;
+  }
+  .Header__list_nav_forUser{
+    left: -253px !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .Header__listElement_PhoneNumber > svg{
+    width: 15px;
+    height: 15px;
+  }
+  .header__comparise svg{
+    width: 25px;
+    height: 25px;
+  }
+  .Header__list_nav li {
+    font-size: 10px;
+  }
+  .Header__list_sublist li a{
+    font-size: 10px;
+  }
+  .Header__list_subSublist_wrap_1,
+  .Header__list_subSublist_wrap_2,
+  .Header__list_subSublist_wrap_3,
+  .Header__list_subSublist_wrap_4,
+  .Header__list_subSublist_wrap_5,
+  .Header__list_subSublist_wrap_6 {
+    max-width: 725px;
+    justify-content: center;
+    left: 286px;
+  }
+  .Header__list_subSublist_element > div > a{
+    padding: 0;
+    margin: 0;
+  }
+  .Header__list_subSublist_element{
+    height: 173px;
+  }
+  .Header__list_subSublist_element > div > span{
+
+  }
+}
+@media screen and (max-width: 1000px){
+  .Header__topInfo_workTime{
+    display: none !important;
+  }
+  .Header__topInfo_PhoneNumber{
+    display: flex !important;
+    align-items: center;
+  }
+  .Header__list_nav{
+    display: none;
+  }
+  .Header__listElement_PhoneNumber{
+    display: none;
+  }
+  .Header__profile{
+    display: none !important;
+  }
+  .Header__menu{
+    display: block;
+    margin-left: 25px;
+  }
+}

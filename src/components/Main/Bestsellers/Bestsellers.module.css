@@ -224,3 +224,15 @@
         display: none;
     }
 }
+@media (max-width: 1000px){
+    .mainPage__bestsellers_wrap{
+        justify-content: center;
+    }
+    .left{
+        display: none;
+    }
+
+    .right{
+        display: none;
+    }
+}

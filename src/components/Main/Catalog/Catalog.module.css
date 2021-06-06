@@ -16,6 +16,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .mainPage__contentWrap_1 {
@@ -61,4 +62,8 @@
         margin: 0 5%;
     }
 }
-
+@media (max-width: 1000px) {
+    .mainPage__contentList {
+        justify-content: center;
+    }
+}

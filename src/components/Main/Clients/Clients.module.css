@@ -100,4 +100,7 @@
     .right{
         display: none;
     }
+    .mainPage__OurClientsrecommend_wrap{
+        justify-content: center;
+    }
 }

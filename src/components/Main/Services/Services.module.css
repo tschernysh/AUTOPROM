@@ -22,6 +22,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 68px;
+    flex-wrap: wrap;
 }
 
 
@@ -30,9 +31,9 @@
 }
 
 @media (max-width: 1200px) {
-    .main__Page_OurServices_wrap {
-        flex-direction: column;
-    }
 
-    .main__Page_OurServices {}
+    .main__Page_OurServices_wrap{
+        justify-content: center;
+        text-align: center;
+    }
 }
