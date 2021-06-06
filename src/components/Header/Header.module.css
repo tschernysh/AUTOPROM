@@ -43,33 +43,21 @@
     display: flex;
     align-items: center;
   }
-.Header__list_nav {
-    display: flex;
+  .Header__list_nav {
+      display: flex;
 
   }
-
-  .Header__list_nav li:nth-of-type(2) a:hover>.Header__list_nav_arrow {
-    border: solid #AC0D0D;
-    transform: rotate(-135deg);
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 4px;
-  }
-
-  .Header__list_nav_arrow {
-    border: solid #FF8514;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 4px;
-    transform: rotate(45deg);
-    margin-left: 6px;
-    margin-bottom: 3px;
-  }
-
-  .Header__list_nav li:hover>.Header__list_nav_arrow {
-    border: solid #AC0D0D;
+  .Header__list_nav li:hover a>svg {
     transform: rotate(-180deg);
   }
+  .Header__list_nav li:hover a>svg path{
+    stroke: #AC0D0D;
+  }
+  .Header__list_nav li a>svg {
+    transition: all 0.5s;
+    margin-left: 5px;
+  }
+
 
   .Header__list_nav li ul {
     display: none;
@@ -105,7 +93,7 @@
     line-height: 25px;
   }
 
-  .Header__list_nav_forUser li a:hover {
+  .Header__list_nav_forUser li:hover > a {
     color: #FF8514 !important;
   }
 
@@ -122,7 +110,8 @@
   .Header__list_nav li a {
     color: #FF8514;
     text-decoration: none;
-    display: block;
+    display: flex;
+    align-items: center;
     padding: 5px 5px 5px 15px;
     word-break: keep-all;
     transition: all 0.5s;
@@ -136,10 +125,12 @@
     line-height: 25px;
   }
 
-  .Header__list_sublist li a:hover {
+  .Header__list_sublist li:hover > a {
     color: #FF8514 !important;
   }
-
+  .Header__list_sublist li:hover > svg path {
+    stroke: #FF8514 !important;
+  }
   .Header__list_sublist li svg {
     position: absolute;
     padding-left: 34px;
@@ -201,22 +192,22 @@
 
   .Header__list_sublist li:hover>.Header__list_subSublist_wrap_3 {
     visibility: visible;
-    top: -109px;
+    top: -110px;
   }
 
   .Header__list_sublist li:hover>.Header__list_subSublist_wrap_4 {
     visibility: visible;
-    top: -164px;
+    top: -165px;
   }
 
   .Header__list_sublist li:hover>.Header__list_subSublist_wrap_5 {
     visibility: visible;
-    top: -218.5px;
+    top: -220px;
   }
 
   .Header__list_sublist li:hover>.Header__list_subSublist_wrap_6 {
     visibility: visible;
-    top: -273px;
+    top: -275px;
   }
 
   .Header__list_subSublist_element {
@@ -250,8 +241,9 @@
     white-space: pre-wrap;
   }
 
-  .Header__list_subSublist_element div:hover {
+  .Header__list_subSublist_element:hover {
     color: #FF8514;
+    cursor: pointer;
   }
 
   .Header__list_subSublist_element:nth-of-type(1) {
@@ -296,8 +288,10 @@
     bottom: 30px;
     right: 20px;
   }
-
-  .Header__list_subSublist_element div:hover>.Header__list_nav_subSubArrow {
+.Header__list_subSublist_element:hover div > a{
+  color: #FF8514;
+}
+  .Header__list_subSublist_element:hover div>.Header__list_nav_subSubArrow {
     border: solid #FF8514;
     border-width: 0 2px 2px 0;
     padding: 4px;
@@ -313,7 +307,7 @@
     position: relative;
   }
 
-  .Header__list_nav li a:hover {
+  .Header__list_nav li:hover> a {
     color: rgba(172, 13, 13, 1);
   }
 
@@ -335,9 +329,13 @@
   }
 
   .Header__listElement_PhoneNumber {
-      margin-right: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
   }
-
+  .Header__listElement_PhoneNumber span{
+    margin-left: 5px;
+  }
   .Header__list_rightPartElement {
       margin-left: 20px;
   }

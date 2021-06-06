@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import s from './Header.module.css';
 import {NavLink} from "react-router-dom";
 import ForUser from "../ForUser/ForUser";
@@ -18,9 +18,104 @@ import {RegistrationPopup} from "../Popups/RegistrationPopup";
 import {LoginPopup} from "../Popups/LoginPopup";
 import {CartPopup} from "../Popups/CartPopup";
 import {ComparisePopup} from "../Popups/ComparisePopup";
+import {ReactComponent as CatalogVector1} from '../../common/icons/Header__catalogVector_1.svg'
+import {ReactComponent as CatalogVector2} from '../../common/icons/Header__catalogVector_2.svg'
+import {ReactComponent as CatalogVector3} from '../../common/icons/Header__catalogVector_3.svg'
+import {ReactComponent as CatalogVector4} from '../../common/icons/Header__catalogVector_4.svg'
+import {ReactComponent as CatalogVector5} from '../../common/icons/Header__catalogVector_5.svg'
+import {ReactComponent as CatalogVector6} from '../../common/icons/Header__catalogVector_6.svg'
+import {ReactComponent as MenuArrow} from '../../common/icons/Header__arrowVector.svg'
 
 const Header = (props) => {
     const {modalVisibility, setModalVisibility, modalContent, setModalContent} = useContext(ModalContext)
+    const [headerList, setHeaderList] = useState(
+        [
+            {name: 'Автомобильные инструменты',
+                style: s.Header__list_subSublist_wrap_1,
+                img: <CatalogVector1 />,
+                list: [
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 },
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 }
+                ]
+            },
+            {name: 'Аксессуары и оборудование',
+                style: s.Header__list_subSublist_wrap_2,
+                img: <CatalogVector2 />,
+                list: [
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 },
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 }
+                ]
+            },
+            {name: 'Аудио и видеотехника',
+                style: s.Header__list_subSublist_wrap_3,
+                img: <CatalogVector3 />,
+                list: [
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 },
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 }
+                ]
+            },
+            {name: 'Автосвет',
+                style: s.Header__list_subSublist_wrap_4,
+                img: <CatalogVector4 />,
+                list: [
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 },
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 }
+                ]
+            },
+            {name: 'Электроника',
+                style: s.Header__list_subSublist_wrap_5,
+                img: <CatalogVector5 />,
+                list: [
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 },
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 }
+                ]
+            },
+            {name: 'Запчасти',
+                style: s.Header__list_subSublist_wrap_6,
+                img: <CatalogVector6 />,
+                list: [
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 },
+                    {name: 'Автомобильные компрессоры', img: HeaderElement8 },
+                    {name: 'Домкраты и опоры', img: HeaderElement9 },
+                    {name: 'Слесарный инструмент', img: HeaderElement10 },
+                    {name: 'Диагностическое оборудование', img: HeaderElement11 }
+                ]
+            }
+        ]
+    )
 
     return (
         <header>
@@ -61,394 +156,28 @@ const Header = (props) => {
                             <nav className={s.Header__list_nav}>
                                 <li><NavLink to='/' >Главная</NavLink></li>
 
-                                <li><NavLink to='/Catalog'>Каталог<span className={s.Header__list_nav_arrow}></span></NavLink>
+                                <li><NavLink to='/Catalog'>Каталог <MenuArrow /> </NavLink>
                                     <ul className={s.Header__list_sublist}>
-                                        <li>
-                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M9.18697 20.656L6.17897 21.4752L5.38538 24.4896L7.59977 26.6848L10.6046 25.8656L11.3982 22.8512L9.18697 20.656Z"
-                                                    stroke="#272522" stroke-miterlimit="10" />
-                                                <path
-                                                    d="M10.2975 17.7024L17.7919 10.1728C17.7919 10.1728 16.4447 1.33121 24.8863 2.35201L21.8239 5.5392L22.5599 9.4784L26.3423 10.208L29.6799 7.0272C29.6799 7.0272 30.5247 15.0112 21.8655 14.2112L14.4095 21.376C14.4095 21.376 16.0095 25.4144 12.3359 28.432C10.1695 30.2112 6.58867 30.2496 4.18547 27.9936C1.52307 25.4944 1.96467 21.9936 3.71187 19.7376C5.49747 17.4368 8.87987 17.2288 10.2975 17.7024V17.7024Z"
-                                                    stroke="#272522" stroke-miterlimit="10" />
-                                            </svg>
-                                            <a href="#">Автомобильные инструменты</a>
-                                            <span className={s.Header__list_nav_subArrow}></span>
-                                            <div className={s.Header__list_subSublist_wrap_1}>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement8} alt=""/>
-                                                    <div>
-                                                        <a href="#">Автомобильные компрессоры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
+                                        {headerList.map( (el) => <li>
+                                                {el.img}
+                                                <a href="#">{el.name}</a>
+                                                <span className={s.Header__list_nav_subArrow}></span>
+                                                <div className={`${el.style} ${s.Header__list_subSublist_wrap}`}>
+                                                    {el.list.map((li) => <div className={s.Header__list_subSublist_element}>
+                                                            <img src={li.img} alt=""/>
+                                                            <div>
+                                                                <a href="#">{li.name}</a>
+                                                                <span className={s.Header__list_nav_subSubArrow}></span>
+                                                            </div>
+                                                        </div>
+                                                    )}
                                                 </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement9} alt=""/>
-                                                    <div>
-                                                        <a href="#">Домкраты и опоры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement10} alt=""/>
-                                                    <div>
-                                                        <a href="#">Слесарный инструмент</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement11} alt=""/>
-                                                    <div>
-                                                        <a href="#">Диагностическое оборудование</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                      d="M31 16C31 24.2843 24.2843 31 16 31C7.71573 31 1 24.2843 1 16C1 7.71573 7.71573 1 16 1C24.2843 1 31 7.71573 31 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM19.9655 16C19.9655 18.1901 18.1901 19.9655 16 19.9655C13.8099 19.9655 12.0345 18.1901 12.0345 16C12.0345 13.8099 13.8099 12.0345 16 12.0345C18.1901 12.0345 19.9655 13.8099 19.9655 16ZM20.9655 16C20.9655 16.0317 20.9652 16.0633 20.9646 16.0949C20.9556 16.5784 21.208 17.0505 21.6598 17.2232L23.9528 18.1C24.1094 18.1598 24.2856 18.1372 24.422 18.0398L27.4406 15.8837C27.6653 15.7232 27.9776 15.7753 28.1381 16C28.2986 16.2247 28.2465 16.537 28.0218 16.6975L25.0032 18.8535C24.594 19.1459 24.0655 19.2136 23.5957 19.034L21.5058 18.2349C20.9989 18.0411 20.4379 18.2947 20.1374 18.7465C20.0747 18.8409 20.0087 18.933 19.9398 19.0227C19.6517 19.3976 19.5712 19.9125 19.8166 20.3167L21.1009 22.4319C21.1915 22.5812 21.3536 22.6724 21.5282 22.6724H25.431C25.7072 22.6724 25.931 22.8963 25.931 23.1724C25.931 23.4486 25.7072 23.6724 25.431 23.6724H21.5282C21.0042 23.6724 20.5181 23.3989 20.2461 22.9509L19.118 21.093C18.8303 20.6191 18.2135 20.4808 17.6923 20.6697C17.6011 20.7027 17.5087 20.7332 17.4152 20.7609C16.9253 20.9063 16.5353 21.3245 16.5353 21.8356L16.5353 24.3508C16.5353 24.5016 16.6034 24.6444 16.7205 24.7393L18.685 26.3312C18.8995 26.5051 18.9325 26.8199 18.7586 27.0345C18.5848 27.249 18.2699 27.282 18.0554 27.1081L16.0909 25.5162C15.7395 25.2314 15.5353 24.8032 15.5353 24.3508L15.5353 21.8555C15.5353 21.3391 15.1373 20.9182 14.6405 20.7771C14.5559 20.7531 14.4722 20.7269 14.3895 20.6985C13.8923 20.5281 13.3141 20.6538 13.0226 21.0912L11.7069 23.065C11.6255 23.187 11.6019 23.3386 11.6422 23.4797L12.4813 26.4164C12.5572 26.6819 12.4034 26.9586 12.1379 27.0345C11.8724 27.1104 11.5957 26.9566 11.5198 26.6911L10.6807 23.7544C10.5598 23.3313 10.6308 22.8765 10.8748 22.5103L12.2403 20.4619C12.5183 20.0448 12.435 19.4924 12.1217 19.1011C12.033 18.9903 11.9489 18.8757 11.8698 18.7574C11.5706 18.31 11.0154 18.0584 10.5115 18.2474L8.37186 19.0498C8.22345 19.1055 8.11023 19.2282 8.06667 19.3806L7.23883 22.2773C7.16295 22.5428 6.8862 22.6966 6.62069 22.6207C6.35518 22.5448 6.20145 22.2681 6.27733 22.0025L7.10517 19.1058C7.23582 18.6486 7.57551 18.2805 8.02072 18.1135L10.3339 17.246C10.7907 17.0747 11.0463 16.5978 11.0357 16.11C11.0349 16.0734 11.0345 16.0368 11.0345 16C11.0345 15.9041 11.0372 15.8089 11.0426 15.7144C11.0733 15.1728 10.7765 14.6335 10.2548 14.4845L8.09535 13.8674C7.93627 13.822 7.765 13.8582 7.6379 13.9641L5.118 16.064C4.90586 16.2408 4.59058 16.2121 4.41379 16C4.23701 15.7879 4.26568 15.4726 4.47781 15.2958L6.99771 13.1959C7.37902 12.8781 7.89282 12.7696 8.37008 12.9059L10.7378 13.5824C11.203 13.7153 11.6881 13.4889 11.9713 13.0967C12.0631 12.9695 12.1607 12.8469 12.2638 12.7292C12.642 12.2975 12.7297 11.6429 12.3622 11.202L10.95 9.5075C10.855 9.39351 10.7143 9.32761 10.5659 9.32761L7.12059 9.32759C6.84444 9.32759 6.62059 9.10373 6.62059 8.82759C6.62059 8.55145 6.84445 8.32759 7.12059 8.32759L10.5659 8.32761C11.0111 8.32761 11.4332 8.52532 11.7182 8.86728L13.4207 10.91C13.7082 11.255 14.1815 11.3561 14.6128 11.2309C15.1013 11.089 15.4999 10.672 15.4999 10.1632L15.5 8.13837C15.5 8.00575 15.4473 7.87856 15.3535 7.78479L12.6894 5.12085C12.4942 4.92559 12.4942 4.60901 12.6894 4.41374C12.8847 4.21847 13.2012 4.21847 13.3965 4.41372L16.0606 7.07766C16.3419 7.35898 16.5 7.74055 16.5 8.13842L16.4999 10.1543C16.4999 10.668 16.8938 11.0876 17.3872 11.2309C17.4983 11.2631 17.6078 11.2991 17.7155 11.3388C18.1719 11.5068 18.704 11.4224 19.0154 11.0488L20.7408 8.9783C20.8612 8.83385 20.8903 8.63408 20.8163 8.46125L19.5995 5.62205C19.4907 5.36823 19.6083 5.07429 19.8621 4.96552C20.1159 4.85674 20.4098 4.97431 20.5186 5.22813L21.7354 8.06733C21.9576 8.58582 21.8701 9.18513 21.509 9.61848L19.9116 11.5354C19.5655 11.9507 19.6221 12.5608 19.95 12.9907C19.9767 13.0256 20.0029 13.0609 20.0287 13.0966C20.3118 13.4888 20.797 13.7153 21.2621 13.5824L23.6813 12.8912C23.826 12.8499 23.9443 12.7457 24.0036 12.6074L25.2744 9.64191C25.3832 9.38809 25.6771 9.27051 25.9309 9.37928C26.1848 9.48805 26.3023 9.78199 26.1936 10.0358L24.9227 13.0013C24.745 13.4161 24.3899 13.7288 23.956 13.8528L21.7452 14.4844C21.2235 14.6334 20.9267 15.1727 20.9574 15.7144C20.9628 15.8089 20.9655 15.9041 20.9655 16Z"
-                                                      fill="#272522" />
-                                            </svg>
-                                            <a href="#">Аксессуары и оборудование</a>
-                                            <span className={s.Header__list_nav_subArrow}></span>
-                                            <div className={s.Header__list_subSublist_wrap_2}>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement1} alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement2} alt=""/>
-                                                    <div>
-                                                        <a href="#">Автоакустика</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement3} alt=""/>
-                                                    <div>
-                                                        <a href="#">Автомагнитолы</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement4} alt=""/>
-                                                    <div>
-                                                        <a href="#">Автомобильные телевизоры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement5} alt=""/>
-                                                    <div>
-                                                        <a href="#">Антенны</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement6} alt=""/>
-                                                    <div>
-                                                        <a href="#">Переходные рамки</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src={HeaderElement7} alt=""/>
-                                                    <div>
-                                                        <a href="#">Усилители</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M31.7969 8.67188H5.20312C4.13025 8.67325 3.10171 9.10006 2.34307 9.8587C1.58443 10.6173 1.15763 11.6459 1.15625 12.7188V24.2812C1.15763 25.3541 1.58443 26.3827 2.34307 27.1413C3.10171 27.8999 4.13025 28.3267 5.20312 28.3281H31.7969C32.8698 28.3267 33.8983 27.8999 34.6569 27.1413C35.4156 26.3827 35.8424 25.3541 35.8438 24.2812V12.7188C35.8424 11.6459 35.4156 10.6173 34.6569 9.8587C33.8983 9.10006 32.8698 8.67325 31.7969 8.67188ZM34.6875 24.2812C34.6866 25.0476 34.3817 25.7823 33.8398 26.3242C33.2979 26.8661 32.5632 27.171 31.7969 27.1719H5.20312C4.43677 27.171 3.70206 26.8661 3.16016 26.3242C2.61826 25.7823 2.31342 25.0476 2.3125 24.2812V12.7188C2.31342 11.9524 2.61826 11.2177 3.16016 10.6758C3.70206 10.1339 4.43677 9.82904 5.20312 9.82812H31.7969C32.5632 9.82904 33.2979 10.1339 33.8398 10.6758C34.3817 11.2177 34.6866 11.9524 34.6875 12.7188V24.2812Z"
-                                                    fill="#272522" />
-                                                <path
-                                                    d="M12.1406 13.2969C11.1115 13.2969 10.1056 13.602 9.24993 14.1738C8.39428 14.7455 7.72738 15.5581 7.33357 16.5089C6.93975 17.4596 6.83672 18.5058 7.03748 19.5151C7.23824 20.5244 7.73379 21.4515 8.46146 22.1792C9.18913 22.9068 10.1162 23.4024 11.1255 23.6031C12.1349 23.8039 13.181 23.7009 14.1318 23.3071C15.0825 22.9132 15.8951 22.2464 16.4669 21.3907C17.0386 20.5351 17.3438 19.5291 17.3438 18.5C17.3422 17.1205 16.7935 15.798 15.8181 14.8225C14.8427 13.8471 13.5201 13.2984 12.1406 13.2969ZM12.1406 22.5469C11.3402 22.5469 10.5578 22.3095 9.8923 21.8649C9.2268 21.4202 8.7081 20.7881 8.4018 20.0487C8.0955 19.3092 8.01536 18.4955 8.17151 17.7105C8.32766 16.9255 8.71309 16.2044 9.27905 15.6384C9.84502 15.0725 10.5661 14.687 11.3511 14.5309C12.1361 14.3747 12.9498 14.4549 13.6893 14.7612C14.4288 15.0675 15.0608 15.5862 15.5055 16.2517C15.9502 16.9172 16.1875 17.6996 16.1875 18.5C16.1861 19.5729 15.7593 20.6014 15.0007 21.3601C14.242 22.1187 13.2135 22.5455 12.1406 22.5469Z"
-                                                    fill="#272522" />
-                                                <path
-                                                    d="M26.5939 16.1875H19.2887C18.7378 14.484 17.5969 13.0331 16.0713 12.096C14.5457 11.1589 12.7357 10.7972 10.9672 11.0761C9.19862 11.3549 7.58771 12.256 6.42447 13.617C5.26123 14.978 4.62207 16.7096 4.62207 18.5C4.62207 20.2904 5.26123 22.022 6.42447 23.383C7.58771 24.744 9.19862 25.6451 10.9672 25.9239C12.7357 26.2028 14.5457 25.8411 16.0713 24.904C17.5969 23.9669 18.7378 22.516 19.2887 20.8125H26.5939C27.2072 20.8125 27.7954 20.5689 28.2291 20.1352C28.6628 19.7015 28.9064 19.1133 28.9064 18.5C28.9064 17.8867 28.6628 17.2985 28.2291 16.8648C27.7954 16.4311 27.2072 16.1875 26.5939 16.1875ZM12.1408 24.8594C10.883 24.8594 9.65348 24.4864 8.60769 23.7876C7.5619 23.0888 6.7468 22.0957 6.26547 20.9336C5.78415 19.7716 5.65821 18.4929 5.90359 17.2593C6.14897 16.0258 6.75464 14.8926 7.64401 14.0032C8.53339 13.1139 9.66652 12.5082 10.9001 12.2628C12.1337 12.0174 13.4124 12.1434 14.5744 12.6247C15.7364 13.106 16.7296 13.9211 17.4284 14.9669C18.1272 16.0127 18.5001 17.2422 18.5001 18.5C18.4982 20.186 17.8275 21.8024 16.6353 22.9946C15.4431 24.1867 13.8268 24.8574 12.1408 24.8594ZM27.4108 19.3169C27.3038 19.4247 27.1766 19.5101 27.0363 19.5684C26.8961 19.6266 26.7457 19.6565 26.5939 19.6562H19.5581C19.6892 18.891 19.6892 18.109 19.5581 17.3438H26.5939C26.8224 17.344 27.0457 17.412 27.2355 17.5391C27.4254 17.6661 27.5734 17.8466 27.6608 18.0577C27.7482 18.2688 27.7711 18.5011 27.7266 18.7252C27.6821 18.9493 27.5722 19.1552 27.4108 19.3169Z"
-                                                    fill="#272522" />
-                                                <path d="M22.5469 23.125H20.2344V24.2812H22.5469V23.125Z" fill="#272522" />
-                                                <path d="M26.0156 23.125H23.7031V24.2812H26.0156V23.125Z" fill="#272522" />
-                                                <path d="M24.8594 12.1406H21.3906V13.2969H24.8594V12.1406Z" fill="#272522" />
-                                                <path
-                                                    d="M32.375 24.2812C32.375 24.4346 32.3141 24.5816 32.2057 24.69C32.0973 24.7985 31.9502 24.8594 31.7969 24.8594H30.0625V26.0156H31.7969C32.2569 26.0156 32.698 25.8329 33.0233 25.5076C33.3485 25.1824 33.5312 24.7412 33.5312 24.2812V23.7031H32.375V24.2812Z"
-                                                    fill="#272522" />
-                                                <path d="M33.5312 21.3906H32.375V22.5469H33.5312V21.3906Z" fill="#272522" />
-                                                <path
-                                                    d="M12.1406 16.1875C11.6833 16.1875 11.2362 16.3231 10.8559 16.5772C10.4756 16.8313 10.1792 17.1925 10.0042 17.615C9.82913 18.0376 9.78333 18.5026 9.87256 18.9511C9.96179 19.3997 10.182 19.8118 10.5054 20.1352C10.8289 20.4586 11.2409 20.6788 11.6895 20.7681C12.1381 20.8573 12.603 20.8115 13.0256 20.6365C13.4481 20.4614 13.8093 20.165 14.0634 19.7848C14.3175 19.4045 14.4531 18.9574 14.4531 18.5C14.4531 17.8867 14.2095 17.2985 13.7758 16.8648C13.3421 16.4311 12.7539 16.1875 12.1406 16.1875ZM12.1406 19.6563C11.9119 19.6563 11.6884 19.5884 11.4982 19.4614C11.3081 19.3343 11.1599 19.1538 11.0724 18.9425C10.9849 18.7312 10.962 18.4987 11.0066 18.2744C11.0512 18.0501 11.1613 17.8441 11.323 17.6824C11.4847 17.5207 11.6908 17.4106 11.9151 17.366C12.1393 17.3214 12.3718 17.3443 12.5831 17.4318C12.7944 17.5193 12.975 17.6675 13.102 17.8576C13.2291 18.0478 13.2969 18.2713 13.2969 18.5C13.2969 18.8067 13.1751 19.1008 12.9582 19.3176C12.7414 19.5344 12.4473 19.6563 12.1406 19.6563Z"
-                                                    fill="#272522" />
-                                            </svg>
-                                            <a href="#">Аудио и видеотехника</a>
-                                            <span className={s.Header__list_nav_subArrow}></span>
-                                            <div className={s.Header__list_subSublist_wrap_3}>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <svg width="37" height="37" viewBox="0 0 37 37" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M5.78125 19.5415C5.78125 19.5415 6.58508 7.55923 18.1066 7.55923C18.1066 7.55923 22.5458 6.13388 22.5458 19.5815C22.5458 19.5815 22.7377 31.7969 17.9511 31.7969C17.9511 31.7969 5.78125 31.1009 5.78125 19.5415V19.5415Z"
-                                                    stroke="#272522" stroke-width="1.1" stroke-miterlimit="10" />
-                                                <path d="M17.9219 31.7969V7.51562" stroke="#272522" stroke-width="1.1"
-                                                      stroke-linecap="round" stroke-linejoin="round" />
-                                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                                      d="M34.9603 26.0156H26.0156V25.2234H35.2656L34.9603 26.0156ZM34.9603 20.054H26.0156V19.2618H35.2656L34.9603 20.054ZM34.9603 14.0924H26.0156V13.2969H35.2656L34.9603 14.0924Z"
-                                                      fill="#272522" />
-                                            </svg>
-                                            <a href="#">Автосвет</a>
-                                            <span className={s.Header__list_nav_subArrow}></span>
-                                            <div className={s.Header__list_subSublist_wrap_4}>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <svg width="34" height="29" viewBox="0 0 34 29" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.4756 22.3897L15.1341 17.0588L19.0731 20.897L20.5244 15.3529"
-                                                      stroke="#272522" />
-                                                <path d="M2.15869 8.49998H32.2562V27.9706H2.15869V8.49998Z" stroke="#272522" />
-                                                <rect x="0.5" y="6.89707" width="33" height="1.55882" stroke="#272522" />
-                                                <path d="M11.5 0.885976H22.5V6.88598H11.5V0.885976Z" stroke="#272522" />
-                                                <line x1="6.30469" y1="4.26471" x2="6.30469" y2="6.39706" stroke="#272522" />
-                                                <line x1="28.2803" y1="4.26471" x2="28.2803" y2="6.39706" stroke="#272522" />
-                                            </svg>
-                                            <a href="#">Электроника</a>
-                                            <span className={s.Header__list_nav_subArrow}></span>
-                                            <div className={s.Header__list_subSublist_wrap_5}>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <svg width="39" height="39" viewBox="0 0 39 39" fill="none"
-                                                 xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M19.5773 2.79336C28.9863 2.79336 36.2325 10.2456 36.2325 19.4188C36.2325 28.592 29.1217 36 19.5773 36C9.7571 36 3 28.3491 3 19.5C3 10.3268 10.1683 2.79336 19.5773 2.79336ZM19.5773 1.83759C17.2061 1.83759 14.9051 2.30559 12.7367 3.22209C10.6424 4.10739 8.7626 5.37489 7.148 6.98949C5.5334 8.60409 4.2659 10.4839 3.3806 12.5782C2.4641 14.7427 2 17.0476 2 19.4188C2 21.79 2.4641 24.0949 3.3806 26.2633C4.2659 28.3576 5.5334 30.2374 7.148 31.852C8.7626 33.4666 10.6424 34.7341 12.7367 35.6194C14.9051 36.5359 17.2061 37 19.5773 37C21.9485 37 24.2534 36.5359 26.4218 35.6194C28.5161 34.7341 30.3959 33.4666 32.0105 31.852C33.6251 30.2374 34.8926 28.3576 35.7779 26.2633C36.6944 24.0949 37.1585 21.7939 37.1585 19.4188C37.1585 17.0437 36.6944 14.7427 35.7779 12.5743C34.8926 10.48 33.6251 8.60019 32.0105 6.98559C30.3959 5.37489 28.5161 4.10739 26.4218 3.22209C24.2534 2.30559 21.9524 1.83759 19.5773 1.83759Z"
-                                                    fill="#272522" />
-                                                <path
-                                                    d="M19.492 8.56053C19.492 8.56053 27.6313 8.50203 30.9814 16.2669C30.9814 16.2669 26.5471 14.3169 19.5505 14.3364C12.5539 14.3559 8.43555 16.3059 8.43555 16.3059C8.43555 16.3059 9.89805 8.89593 19.492 8.56053V8.56053Z"
-                                                    stroke="#272522" stroke-width="0.8" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                                <path
-                                                    d="M17.5694 30.9426C17.5694 30.9426 17.5694 30.9348 17.5655 30.9153C17.5109 30.4239 16.5983 23.4858 8.1626 21.7581C8.1626 21.7581 10.136 29.3202 17.5694 30.9426V30.9426ZM21.4616 30.9426C21.4616 30.9426 21.4616 30.9348 21.4655 30.9153C21.5201 30.4239 22.4327 23.4858 30.8684 21.7581C30.8684 21.7581 28.8911 29.3202 21.4616 30.9426V30.9426Z"
-                                                    stroke="#272522" stroke-width="0.8" stroke-miterlimit="10"
-                                                    stroke-linecap="round" stroke-linejoin="round" />
-                                            </svg>
-                                            <a href="#">Запчасти</a>
-                                            <span className={s.Header__list_nav_subArrow}></span>
-                                            <div className={s.Header__list_subSublist_wrap_6}>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                    <img src="../../common/img/Header__subSubBlock_element_1.png" alt=""/>
-                                                    <div>
-                                                        <a href="#">FM Трансмиттеры</a>
-                                                        <span className={s.Header__list_nav_subSubArrow}></span>
-                                                    </div>
-                                                </div>
-                                                <div className={s.Header__list_subSublist_element}>
-                                                </div>
-                                            </div>
-                                        </li>
+                                            </li>
+                                        )}
                                     </ul>
                                 </li>
 
-                                <li><NavLink to='/ForUser'>Пользователю<span className={s.Header__list_nav_arrow}></span></NavLink>
+                                <li><NavLink to='/ForUser'>Пользователю <MenuArrow /> </NavLink>
                                     <ul className={s.Header__list_nav_forUser}>
                                         <li><NavLink to='/'>Доставка</NavLink></li>
                                         <li><NavLink to='/cart'>Оплата</NavLink></li>
@@ -468,14 +197,14 @@ const Header = (props) => {
 
                             <div className={s.Header__list_rightPartElement}>
                                 <a className={s.Header__list_rightPart_btnText} href="#">
-                                    <div className={s.Header__listElement_PhoneNumber}>
-                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                             xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M18.3952 13.1277C17.1707 13.1277 15.9684 12.9362 14.8291 12.5597C14.2708 12.3693 13.5845 12.544 13.2438 12.8939L10.995 14.5915C8.38703 13.1994 6.78057 11.5934 5.40745 9.00505L7.0551 6.81484C7.48318 6.38734 7.63672 5.76286 7.45276 5.17693C7.07464 4.03161 6.88255 2.8299 6.88255 1.6049C6.8826 0.719948 6.16266 0 5.27776 0H1.60484C0.719948 0 0 0.719948 0 1.60484C0 11.7481 8.25198 20 18.3952 20C19.2801 20 20.0001 19.2801 20.0001 18.3952V14.7325C20 13.8477 19.2801 13.1277 18.3952 13.1277Z"
-                                                fill="#FF8514" />
-                                        </svg>
-                                        +380964773085
+                                        <div className={s.Header__listElement_PhoneNumber}>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M18.3952 13.1277C17.1707 13.1277 15.9684 12.9362 14.8291 12.5597C14.2708 12.3693 13.5845 12.544 13.2438 12.8939L10.995 14.5915C8.38703 13.1994 6.78057 11.5934 5.40745 9.00505L7.0551 6.81484C7.48318 6.38734 7.63672 5.76286 7.45276 5.17693C7.07464 4.03161 6.88255 2.8299 6.88255 1.6049C6.8826 0.719948 6.16266 0 5.27776 0H1.60484C0.719948 0 0 0.719948 0 1.60484C0 11.7481 8.25198 20 18.3952 20C19.2801 20 20.0001 19.2801 20.0001 18.3952V14.7325C20 13.8477 19.2801 13.1277 18.3952 13.1277Z"
+                                                    fill="#FF8514" />
+                                            </svg>
+                                            <span>+380964773085</span>
                                     </div>
                                 </a>
                             </div>
