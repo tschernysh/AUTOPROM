@@ -21,53 +21,9 @@ const Popups = (props) => {
             {/*------------log in------------*/}
 
             {/*------------confirmation------------*/}
-            <div className={s.confirmation}>
-                <div className={s.popups__confirmation__exit}>
-                    <img src={Exit}/>
-                </div>
-                <div className={s.popups__confirmation__img}>
-                    <img src={Confirmation}/>
-                </div>
-                <div className={s.popups__confirmation__text}>
-                    Запрос на восстановление пароля отправлен на Ваш электронный адрес
-                </div>
-            </div>
+
             {/*------------user------------*/}
-            <div className={s.user}>
-                <div className={s.user__exit}>
-                    <img src={Exit}/>
-                </div>
-                <div className={s.user__content}>
-                    <div className={s.user__content__img}>
-                        <img src={User}/>
-                    </div>
-                    <div className={s.user__content__top}>
-                        <div className={s.user__content__title}>
-                            Имя Фамилия
-                        </div>
-                        <div className={s.user__content__location}>
-                            <div className={s.user__content__location__img}>
-                                <img src={CityMarker}/>
-                            </div>
-                            <div className={s.user__content__city}>
-                                Хмельницкий
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className={s.user__title}>
-                    Номер телефона:
-                </div>
-                <div className={s.user__text}>
-                    +380 976543378
-                </div>
-                <div className={s.user__title}>
-                    Адрес доставки:
-                </div>
-                <div className={s.user__text}>
-                    ул. Проскуровская, 23
-                </div>
-            </div>
+
             {/*------------password------------*/}
 
             {/*------------delivery------------*/}

@@ -29,7 +29,7 @@ export const LoginPopup = (props) => {
                     Забыли пароль?
                 </div>
                 <input className={s.popups__log_in__button} type="submit" value="Войти"/>
-                <div className={s.popups__log_in__text__bottom}>
+                <div onClick={() => props.setModalContent(() => RegistrationPopup)} className={s.popups__log_in__text__bottom}>
                     Я хочу зарегистрироваться
                 </div>
             </div>

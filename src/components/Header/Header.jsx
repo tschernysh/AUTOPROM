@@ -26,6 +26,7 @@ import {ReactComponent as CatalogVector5} from '../../common/icons/Header__catal
 import {ReactComponent as CatalogVector6} from '../../common/icons/Header__catalogVector_6.svg'
 import {ReactComponent as MenuArrow} from '../../common/icons/Header__arrowVector.svg'
 import {ReactComponent as Menu} from '../../common/icons/Menu.svg'
+import {ProfileInfo} from "../Popups/ProfileInfo";
 
 const Header = (props) => {
     const {modalVisibility, setModalVisibility, modalContent, setModalContent} = useContext(ModalContext)
@@ -117,6 +118,8 @@ const Header = (props) => {
             }
         ]
     )
+
+    const [isOpen, setIsOpen] = useState(false)
 
     return (
         <header>
@@ -228,7 +231,10 @@ const Header = (props) => {
                             </a>
 
                             <div className={s.Header__list_rightPartElement}>
-                                <a className={`${s.Header__profile}`} href="#">
+                                <a onClick={() => {
+                                    setModalVisibility(true)
+                                    setModalContent(() => ProfileInfo)
+                                }} className={`${s.Header__profile}`} href="#">
                                     <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -273,24 +279,69 @@ const Header = (props) => {
                                     <a  className={s.Header__list_rightPart_btnSmallText} >1 товар</a>
                                 </div>
 
-                                <div onClick={() => {setModalVisibility(true); setModalContent(() => CartPopup)}} className={s.Header__menu}>
+                                <div onClick={() => setIsOpen(!isOpen)} className={s.Header__menu}>
                                     <Menu />
                                 </div>
                             </div>
 
-                            {/*// <div className={s.Header__list_rightPartElement">*/}
-                            {/*//     <input type="checkbox" className={s.Header__list_rightPartElement_dropDown">*/}
-                            {/*//     <label for="Header__list_rightPartElement_dropDown">*/}
-                            {/*//         <div className={s.Header__list_rightPartElement_dropDown_icon"><span></span><span></span><span></span></div>*/}
-                            {/*//         <div className={s.Header__listElement">*/}
-                            {/*//             <a className={s.Header__list_rightPart_btnText" href="#">Войти</a>*/}
-                            {/*//             <a className={s.Header__list_rightPart_btnSmallText" href="#">Регистрация</a>*/}
-                            {/*//         </div>*/}
-                            {/*//     </label>*/}
-                            {/*//         <ul>*/}
-                            {/*//*/}
-                            {/*//         </ul>*/}
-                            {/*// </div>*/}
+                            {isOpen && <div className="Header__list_rightPartElement_dropDown_body">
+                                <div className="Header__list_rightPartElement_dropDown_body_leftElement">
+                                    <a href="#">
+                                        <svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M25.8332 27.125V24.5417C25.8332 23.1714 25.2888 21.8572 24.3199 20.8883C23.3509 19.9193 22.0368 19.375 20.6665 19.375H10.3332C8.96288 19.375 7.64872 19.9193 6.67979 20.8883C5.71085 21.8572 5.1665 23.1714 5.1665 24.5417V27.125"
+                                                stroke="#272522" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                            <path
+                                                d="M15.5002 14.2083C18.3536 14.2083 20.6668 11.8951 20.6668 9.04167C20.6668 6.1882 18.3536 3.875 15.5002 3.875C12.6467 3.875 10.3335 6.1882 10.3335 9.04167C10.3335 11.8951 12.6467 14.2083 15.5002 14.2083Z"
+                                                stroke="#272522" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round"/>
+                                        </svg>
+                                    </a>
+
+                                    <div className="Header__listElement">
+                                        <a className="Header__list_rightPart_btnText" href="#">Войти</a>
+                                        <a className="Header__list_rightPart_btnSmallText" href="#">Регистрация</a>
+                                    </div>
+                                </div>
+                                <div className="Header__list_rightPartElement_dropDown_body_links">
+                                    <a href="#"
+                                       className="Header__list_rightPartElement_dropDown_body_h1Link">Главная</a>
+                                    <a href="#"
+                                       className="Header__list_rightPartElement_dropDown_body_h1Link">Каталог</a>
+
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Автомобильные
+                                        инструменты<span
+                                            className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Аксессуары
+                                        и оборудование<span
+                                            className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Аудио
+                                        и видеотехника<span
+                                            className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Автосвет<span
+                                        className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Электроника<span
+                                        className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+
+                                    <a href="#"
+                                       className="Header__list_rightPartElement_dropDown_body_h1Link">Пользователю</a>
+
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Доставка<span
+                                        className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Оплата<span
+                                        className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_simpleLink">Гарантии<span
+                                        className="Header__list_rightPartElement_dropDown_body_simpleLink_arrow"></span></a>
+
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_h1Link">О нас</a>
+                                    <a href="#"
+                                       className="Header__list_rightPartElement_dropDown_body_h1Link">Услуги</a>
+                                    <a href="#" className="Header__list_rightPartElement_dropDown_body_h1Link">Блог</a>
+                                </div>
+
+                            </div>}
                         </div>
                     </div>
                 </div>
