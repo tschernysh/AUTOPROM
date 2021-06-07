@@ -49,6 +49,19 @@ export const ComparisePopup = (props) => {
 
                     </tbody>
                 </table>
+                <div className="comparise__template">
+                    <div className="comparise__template_product">
+                        <img src="" alt=""/>
+                        <div className="template__product_info">
+                            <h5>Фара передняя Hyundai Getz</h5>
+                            <sub>2005-2010 правая H4, мех. регул. 221-1141R-LD-E</sub>
+                            <div>
+                                <span>3 578 ₴</span>
+                                <button><Cart/></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     )

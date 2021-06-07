@@ -47,8 +47,9 @@
     align-items: center;
   }
   .Header__list_nav {
-      display: flex;
-
+    display: flex;
+    height: 100%;
+    padding-top: 15px;
   }
   .Header__list_nav li:hover a>svg {
     transform: rotate(-180deg);
@@ -320,7 +321,7 @@
   }
   .Header__list_nav li:hover ul{
     position: absolute;
-    top: 41px;
+    top: 45px;
     left: -242px;
     border-top: 18px solid rgba(0, 0, 0, 0.1) ;
   }
