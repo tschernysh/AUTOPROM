@@ -46,100 +46,109 @@ const BlogItem = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className={s.blog__more__title}>
-                    Другие статьи
+
+               <NewsBlock title={'Другие статьи'}/>
+            </div>
+        </div>
+    )
+}
+
+export const NewsBlock = (props) => {
+    return(
+        <>
+            <div className={s.blog__more__title}>
+                {props.title}
+            </div>
+            <div className={s.blog__first__slider}>
+                <div className={s.blog__first__items}>
+                    <div className={s.blog__first__item}>
+                        <div className={s.blog__first__item__left}>
+                            <div className={s.blog__first__item__left__img}>
+                                <img src={BlogSecond}/>
+                            </div>
+                        </div>
+                        <div className={s.blog__first__item__right}>
+                            <div className={s.blog__first__item__right__data}>
+                                <div className={s.blog__first__item__right__data__date}>
+                                    27/03/21
+                                </div>
+                                <div className={s.blog__first__item__right__data__location}>
+                                    Киев, Украина
+                                </div>
+                            </div>
+                            <div className={s.blog__first__item__right__title}>
+                                Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
+                            </div>
+                            <div className={s.blog__first__item__right__text}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
+                                tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
+                            </div>
+                            <div className={s.blog__first__item__right__more}>
+                                <NavLink to='/BlogItem'>Читать больше</NavLink>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className={s.blog__first__slider}>
-                    <div className={s.blog__first__items}>
-                        <div className={s.blog__first__item}>
-                            <div className={s.blog__first__item__left}>
-                                <div className={s.blog__first__item__left__img}>
-                                    <img src={BlogSecond}/>
+                <div className={s.blog__first__items}>
+                    <div className={s.blog__first__item}>
+                        <div className={s.blog__first__item__left}>
+                            <div className={s.blog__first__item__left__img}>
+                                <img src={BlogThird}/>
+                            </div>
+                        </div>
+                        <div className={s.blog__first__item__right}>
+                            <div className={s.blog__first__item__right__data}>
+                                <div className={s.blog__first__item__right__data__date}>
+                                    27/03/21
+                                </div>
+                                <div className={s.blog__first__item__right__data__location}>
+                                    Киев, Украина
                                 </div>
                             </div>
-                            <div className={s.blog__first__item__right}>
-                                <div className={s.blog__first__item__right__data}>
-                                    <div className={s.blog__first__item__right__data__date}>
-                                        27/03/21
-                                    </div>
-                                    <div className={s.blog__first__item__right__data__location}>
-                                        Киев, Украина
-                                    </div>
-                                </div>
-                                <div className={s.blog__first__item__right__title}>
-                                    Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
-                                </div>
-                                <div className={s.blog__first__item__right__text}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
-                                    tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
-                                </div>
-                                <div className={s.blog__first__item__right__more}>
-                                    <NavLink to='/BlogItem'>Читать больше</NavLink>
-                                </div>
+                            <div className={s.blog__first__item__right__title}>
+                                Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
+                            </div>
+                            <div className={s.blog__first__item__right__text}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
+                                tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
+                            </div>
+                            <div className={s.blog__first__item__right__more}>
+                                <NavLink to='/BlogItem'>Читать больше</NavLink>
                             </div>
                         </div>
                     </div>
-                    <div className={s.blog__first__items}>
-                        <div className={s.blog__first__item}>
-                            <div className={s.blog__first__item__left}>
-                                <div className={s.blog__first__item__left__img}>
-                                    <img src={BlogThird}/>
-                                </div>
-                            </div>
-                            <div className={s.blog__first__item__right}>
-                                <div className={s.blog__first__item__right__data}>
-                                    <div className={s.blog__first__item__right__data__date}>
-                                        27/03/21
-                                    </div>
-                                    <div className={s.blog__first__item__right__data__location}>
-                                        Киев, Украина
-                                    </div>
-                                </div>
-                                <div className={s.blog__first__item__right__title}>
-                                    Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
-                                </div>
-                                <div className={s.blog__first__item__right__text}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
-                                    tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
-                                </div>
-                                <div className={s.blog__first__item__right__more}>
-                                    <NavLink to='/BlogItem'>Читать больше</NavLink>
-                                </div>
+                </div>
+                <div className={s.blog__first__items}>
+                    <div className={s.blog__first__item}>
+                        <div className={s.blog__first__item__left}>
+                            <div className={s.blog__first__item__left__img}>
+                                <img src={BlogFour}/>
                             </div>
                         </div>
-                    </div>
-                    <div className={s.blog__first__items}>
-                        <div className={s.blog__first__item}>
-                            <div className={s.blog__first__item__left}>
-                                <div className={s.blog__first__item__left__img}>
-                                    <img src={BlogFour}/>
+                        <div className={s.blog__first__item__right}>
+                            <div className={s.blog__first__item__right__data}>
+                                <div className={s.blog__first__item__right__data__date}>
+                                    27/03/21
+                                </div>
+                                <div className={s.blog__first__item__right__data__location}>
+                                    Киев, Украина
                                 </div>
                             </div>
-                            <div className={s.blog__first__item__right}>
-                                <div className={s.blog__first__item__right__data}>
-                                    <div className={s.blog__first__item__right__data__date}>
-                                        27/03/21
-                                    </div>
-                                    <div className={s.blog__first__item__right__data__location}>
-                                        Киев, Украина
-                                    </div>
-                                </div>
-                                <div className={s.blog__first__item__right__title}>
-                                    Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
-                                </div>
-                                <div className={s.blog__first__item__right__text}>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
-                                    tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
-                                </div>
-                                <div className={s.blog__first__item__right__more}>
-                                    <NavLink to='/BlogItem'>Читать больше</NavLink>
-                                </div>
+                            <div className={s.blog__first__item__right__title}>
+                                Dolor sit amet, consectetur adipiscing elit. Varius eu in blandit augue
+                            </div>
+                            <div className={s.blog__first__item__right__text}>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper id semper ut diam
+                                tincidunt in semper euismod pulvinar. Nunc vel massa risus facilisi in.
+                            </div>
+                            <div className={s.blog__first__item__right__more}>
+                                <NavLink to='/BlogItem'>Читать больше</NavLink>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

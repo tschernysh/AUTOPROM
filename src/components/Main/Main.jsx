@@ -4,6 +4,7 @@ import Catalog from "./Catalog/Catalog";
 import Bestsellers from "./Bestsellers/Bestsellers";
 import Services from "./Services/Services";
 import Clients from "./Clients/Clients";
+import {NewsBlock} from "../BlogItem/BlogItem";
 
 const Main = () => {
     return (
@@ -16,6 +17,7 @@ const Main = () => {
             <Services/>
             <div className={s.container}>
                 <Clients />
+                <NewsBlock title={'Новости'} />
             </div>
         </>
     )
