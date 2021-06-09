@@ -32,3 +32,11 @@
     font-weight: 400;
     color: #000000CC;
 }
+
+@media (max-width: 1300px) {
+
+    .product__feedback_card{
+        width: 374px;
+        max-width: 100%;
+    }
+}

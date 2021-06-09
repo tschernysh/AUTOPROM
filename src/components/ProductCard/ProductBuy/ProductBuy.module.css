@@ -28,3 +28,21 @@
     top: 50%;
     transform: translate(0, -50%);
 }
+
+@media (max-width: 1300px) {
+    .product__buy_wrapper{
+        flex-direction: column;
+    }
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+
+    .product__buy_title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+    }
+}

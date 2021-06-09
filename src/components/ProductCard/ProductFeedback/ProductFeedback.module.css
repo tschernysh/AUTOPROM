@@ -37,3 +37,28 @@
     top: 50%;
     transform: translate(0, -50%);
 }
+
+@media (max-width: 1300px) {
+    .product__feedback_title div:nth-child(1){
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .product__feedback_title div:nth-child(2){
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .product__feedback_wrapper {
+        flex-direction: column;
+    }
+
+    .left{
+        display: none;
+    }
+    .right{
+        display: none;
+    }
+
+}

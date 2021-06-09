@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useContext, useState} from 'react'
 import s from './ProductItem.module.css'
 import Star from '../../../common/img/star.png'
 import ProductPhoto from '../../../common/img/product_1.png'
@@ -6,9 +6,11 @@ import ProductPhoto2 from '../../../common/img/product_2.png'
 import {ReactComponent as Comparison} from '../../../common/icons/Header__comparisonVector.svg'
 import {ReactComponent as ArrowRight} from "../../../common/icons/arrow-right.svg";
 import {ReactComponent as ArrowLeft} from "../../../common/icons/arrow-left.svg";
+import {PopupsDelivery} from "../../Popups/PopupsDelivery";
+import {ModalContext} from "../../../common/context/ModalContext";
 
 const ProductItem = () => {
-
+    const {modalVisibility, setModalVisibility, modalContent, setModalContent} = useContext(ModalContext)
     const [gallery, setGallery] = useState([ProductPhoto, ProductPhoto2, ProductPhoto])
     const [currentPhoto, setCurrentPhoto] = useState(0)
 
@@ -31,16 +33,20 @@ const ProductItem = () => {
                 <div className={s.product__gallery}>
                     <img src={gallery[currentPhoto]} alt=""/>
                     <div className={s.product__gallery_photos}>
-                        <button className={s.arrows__left} ><ArrowLeft onClick={() => setCurrentPhoto(currentPhoto === 0 ? gallery.length-1 : currentPhoto-1 )} /></button>
+                        <button className={s.arrows__left}><ArrowLeft
+                            onClick={() => setCurrentPhoto(currentPhoto === 0 ? gallery.length - 1 : currentPhoto - 1)}/>
+                        </button>
 
-                        {gallery.map((el, index) => (index <= currentPhoto-1 || index > currentPhoto+1) ? null :
+                        {gallery.map((el, index) => (index <= currentPhoto - 1 || index > currentPhoto + 1) ? null :
                             <img onClick={() => setCurrentPhoto(index)}
                                  src={el}
                                  key={index}
                                  className={`${s.product__gallery_photo} ${index === currentPhoto ? s.gallery__active : ''}`}/>
                         )}
 
-                        <button className={s.arrows__right} ><ArrowRight onClick={() => setCurrentPhoto(currentPhoto === gallery.length-1 ? 0 : currentPhoto+1 )} /></button>
+                        <button className={s.arrows__right}><ArrowRight
+                            onClick={() => setCurrentPhoto(currentPhoto === gallery.length - 1 ? 0 : currentPhoto + 1)}/>
+                        </button>
                     </div>
                 </div>
                 <div className={s.product__info}>
@@ -96,9 +102,19 @@ const ProductItem = () => {
                         </div>
                     </div>
                     <div className={s.product__cost}>
-                        <div><span>цена</span> <span>3578 $</span></div>
-                        <button><Comparison width={'24px'} height={'24px'}/> Сравнить</button>
-                        <button>Купить</button>
+                        <div>
+                            <div className={`${s.product__delivery_popup_item}`}>
+                                <a onClick={() => {
+                                    setModalVisibility(true)
+                                    setModalContent( () => PopupsDelivery )
+                                }}  className={s.product__delivery_popup} href="#">О доставке</a>
+                            </div>
+                            <div><span>цена</span> <span>3578 $</span></div>
+                        </div>
+                        <div>
+                            <button><Comparison width={'24px'} height={'24px'}/> Сравнить</button>
+                            <button>Купить</button>
+                        </div>
                     </div>
                 </div>
             </div>

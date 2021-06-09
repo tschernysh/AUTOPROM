@@ -80,3 +80,19 @@
     margin-bottom: 35px;
     list-style: none;
 }
+
+@media (max-width: 1300px) {
+    .product__about_nav button{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .product__about_chars {
+        flex-direction: column;
+    }
+
+    .product__about_chars div {
+        width: 100%;
+    }
+}

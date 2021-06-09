@@ -3,3 +3,10 @@
     margin: 0 auto;
     padding: 0px 10px;
 }
+
+@media (max-width: 1300px) {
+    .product__card_path {
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
