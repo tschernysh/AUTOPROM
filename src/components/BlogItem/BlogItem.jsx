@@ -55,7 +55,7 @@ const BlogItem = (props) => {
 
 export const NewsBlock = (props) => {
     return(
-        <>
+        <div className={props.title === 'Новости' && s.blog__block}>
             <div className={s.blog__more__title}>
                 {props.title}
             </div>
@@ -148,7 +148,7 @@ export const NewsBlock = (props) => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 
