@@ -1,4 +1,5 @@
-import s from './Footer.module.css'
+import s from './Footer.module.css';
+import {NavLink} from "react-router-dom";
 
 const Footer = (props) => {
 
@@ -113,7 +114,7 @@ const Footer = (props) => {
                         <span> </span>
                         <div className={s.mainPage__footer__items}>
                             <div className={s.mainPage__footer_mainPartElement}>
-                                <a href="#" className={s.mainPage__footer_mainPartElement_title}>Главная</a>
+                                <NavLink to="/" className={s.mainPage__footer_mainPartElement_title}>Главная</NavLink>
 
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Категории</a>
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Хиты продаж</a>
@@ -124,7 +125,7 @@ const Footer = (props) => {
                             <span> </span>
 
                             <div className={s.mainPage__footer_mainPartElement}>
-                                <a href="#" className={s.mainPage__footer_mainPartElement_title}>Каталог</a>
+                                <NavLink to="/" className={s.mainPage__footer_mainPartElement_title}>Каталог</NavLink>
 
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Автомобильные
                                     инструменты</a>
@@ -138,7 +139,7 @@ const Footer = (props) => {
                             <span> </span>
 
                             <div className={s.mainPage__footer_mainPartElement}>
-                                <a href="#" className={s.mainPage__footer_mainPartElement_title}>Пользователю</a>
+                                <NavLink to="/ForUser" className={s.mainPage__footer_mainPartElement_title}>Пользователю</NavLink>
 
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Доставка</a>
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Оплата</a>
@@ -148,7 +149,7 @@ const Footer = (props) => {
                             <span> </span>
 
                             <div className={s.mainPage__footer_mainPartElement}>
-                                <a href="#" className={s.mainPage__footer_mainPartElement_title}>О нас</a>
+                                <NavLink to="/About" className={s.mainPage__footer_mainPartElement_title}>О нас</NavLink>
 
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Про компанию</a>
                                 <a href="#" className={s.mainPage__footer_mainPartElement_text}>Контакты</a>

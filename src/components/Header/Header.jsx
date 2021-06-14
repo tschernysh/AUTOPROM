@@ -186,7 +186,7 @@ const Header = (props) => {
                                     </ul>
                                 </li>
 
-                                <li><NavLink to='/'>Пользователю <MenuArrow /> </NavLink>
+                                <li><NavLink to='/ForUser'>Пользователю <MenuArrow /> </NavLink>
                                     <ul className={s.Header__list_nav_forUser}>
                                         <li><NavLink to='/'>Доставка</NavLink></li>
                                         <li><NavLink to='/cart'>Оплата</NavLink></li>
@@ -309,10 +309,10 @@ const Header = (props) => {
                                     <MenuClose className={s.Header__list_menuClose} onClick={() => {setIsOpen(false); setCurrentName(null)}} />
                                 </div>
                                 {!currentName ? <div className={s.Header__list_rightPartElement_dropDown_body_links}>
-                                    <a href="#"
-                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Главная</a>
-                                    <a href="#"
-                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Каталог</a>
+                                    <NavLink to="/"
+                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Главная</NavLink>
+                                    <NavLink to="/"
+                                             className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Каталог</NavLink>
 
                                     <a onClick={(e) => setCurrentName('Автомобильные инструменты')} href="#" className={s.Header__list_rightPartElement_dropDown_body_simpleLink}>Автомобильные
                                         инструменты<span
@@ -328,8 +328,8 @@ const Header = (props) => {
                                     <a onClick={(e) => setCurrentName('Электроника')} href="#" className={s.Header__list_rightPartElement_dropDown_body_simpleLink}>Электроника<span
                                         className={s.Header__list_rightPartElement_dropDown_body_simpleLink_arrow}></span></a>
 
-                                    <a href="#"
-                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Пользователю</a>
+                                    <NavLink to="/ForUser"
+                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Пользователю</NavLink>
 
                                     <a href="#" className={s.Header__list_rightPartElement_dropDown_body_simpleLink}>Доставка<span
                                         className={s.Header__list_rightPartElement_dropDown_body_simpleLink_arrow}></span></a>
@@ -338,10 +338,10 @@ const Header = (props) => {
                                     <a href="#" className={s.Header__list_rightPartElement_dropDown_body_simpleLink}>Гарантии<span
                                         className={s.Header__list_rightPartElement_dropDown_body_simpleLink_arrow}></span></a>
 
-                                    <a href="#" className={s.Header__list_rightPartElement_dropDown_body_h1Link}>О нас</a>
-                                    <a href="#"
-                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Услуги</a>
-                                    <a href="#" className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Блог</a>
+                                    <NavLink to="/About" className={s.Header__list_rightPartElement_dropDown_body_h1Link}>О нас</NavLink>
+                                    <NavLink to="/Services"
+                                       className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Услуги</NavLink>
+                                    <NavLink to="/Blog" className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Блог</NavLink>
                                 </div>
                                     : <div className={s.header__list_block}>
                                         <h5>{currentName}</h5>
