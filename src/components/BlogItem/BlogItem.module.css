@@ -115,8 +115,23 @@
     font-size: 28px;
     line-height: 38px;
     color: #272522;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
+.mainPage__bestsellers_dots{
+    background: #00000033;
+    width: 120px;
+    height: 2px;
+    display: flex;
+}
+.mainPage__bestsellers_dots span{
+    width: 40px;
+    height: 2px;
+}
+.active__dot{
+    background:  #00000099 !important;
+}
 @media (max-width: 1360px) {
     .container {
         margin: 0 5% 0 5%;

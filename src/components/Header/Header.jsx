@@ -1,6 +1,6 @@
 import React, {useContext, useState} from 'react';
 import s from './Header.module.css';
-import {NavLink} from "react-router-dom";
+import {NavLink, useHistory} from "react-router-dom";
 import ForUser from "../ForUser/ForUser";
 import HeaderElement1 from "../../common/img/Header__subSubBlock_element_1.png"
 import HeaderElement2 from "../../common/img/Header__subSubBlock_element_2.png"
@@ -122,6 +122,7 @@ const Header = (props) => {
 
     const [isOpen, setIsOpen] = useState(false)
     const [currentName , setCurrentName] = useState(null)
+    const history = useHistory()
 
     return (
         <header>
@@ -172,13 +173,14 @@ const Header = (props) => {
                                                 <a href="#">{el.name}</a>
                                                 <span className={s.Header__list_nav_subArrow}></span>
                                                 <div className={`${el.style} ${s.Header__list_subSublist_wrap}`}>
-                                                    {el.list.map((li) => <div className={s.Header__list_subSublist_element}>
+                                                    {el.list.map((li) =><div onClick={() => history.push('/catalog')} className={s.Header__list_subSublist_element}>
                                                             <img src={li.img} alt=""/>
                                                             <div>
                                                                 <a href="#">{li.name}</a>
                                                                 <span className={s.Header__list_nav_subSubArrow}></span>
                                                             </div>
                                                         </div>
+
                                                     )}
                                                 </div>
                                             </li>
@@ -311,7 +313,7 @@ const Header = (props) => {
                                 {!currentName ? <div className={s.Header__list_rightPartElement_dropDown_body_links}>
                                     <NavLink to="/"
                                        className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Главная</NavLink>
-                                    <NavLink to="/"
+                                    <NavLink to="/catalog"
                                              className={s.Header__list_rightPartElement_dropDown_body_h1Link}>Каталог</NavLink>
 
                                     <a onClick={(e) => setCurrentName('Автомобильные инструменты')} href="#" className={s.Header__list_rightPartElement_dropDown_body_simpleLink}>Автомобильные
@@ -346,7 +348,7 @@ const Header = (props) => {
                                     : <div className={s.header__list_block}>
                                         <h5>{currentName}</h5>
                                         <div className={s.header__list_sub}>
-                                            {headerList.filter(el => el.name === currentName)[0].list.map(li => <div>
+                                            {headerList.filter(el => el.name === currentName)[0].list.map(li =>  <div onClick={() => {history.push('/catalog'); setIsOpen(false)}}>
                                                 <img src={li.img} alt=""/>
                                                 <sub>{li.name} <MenuArrow className={s.header__list_arrow}/></sub>
                                             </div>)}

@@ -8,6 +8,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .mainPage__bestsellers_h1 {
@@ -234,5 +238,15 @@
 
     .right{
         display: none;
+    }
+}
+@media (max-width: 850px){
+    .mainPage__bestsellers_wrap{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mainPage__bestsellers{
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

@@ -2,8 +2,11 @@ import s from './BestsellersItem.module.css'
 import Star from '../../../../common/img/star.png'
 import HollowStar from '../../../../common/img/hollowStar.png'
 import ElBestsellers from '../../../../common/img/elementFromBestsellers_1.png'
+import {useHistory} from "react-router-dom";
 
 const BestsellersItem = (props) => {
+    const history = useHistory()
+
     return (
         <div className={s.mainPage__bestsellers_element}>
             {!props.subcategory && <div className={s.mainPage__bestsellers_element_top}>
@@ -11,8 +14,8 @@ const BestsellersItem = (props) => {
                 <div>-10%</div>
             </div>}
             <div className={s.mainPage__bestsellers_element_content}>
-                <div className={s.mainPage__bestsellers_element_content_title}>Фара передняя Hyundai</div>
-                <div className={s.mainPage__bestsellers_element_content_comment}>
+                <div onClick={() => history.push('/product')}  className={s.mainPage__bestsellers_element_content_title}>Фара передняя Hyundai</div>
+                <div draggable={false}  className={s.mainPage__bestsellers_element_content_comment}>
                     <img src={Star} alt=""/>
                     <img src={Star} alt=""/>
                     <img src={Star} alt=""/>
@@ -20,7 +23,7 @@ const BestsellersItem = (props) => {
                     <img src={HollowStar} alt=""/>
                     <a href="#">12 отзывов</a>
                 </div>
-                <img src={ElBestsellers} alt=""/>
+                <img draggable={false} src={ElBestsellers} alt=""/>
                 <div className={s.mainPage__bestsellers_element_content_price}>
                     <span>3 578 ₴</span><span>5 203
                                     ₴</span></div>
