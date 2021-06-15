@@ -50,8 +50,15 @@
         line-height: 19px;
     }
 
+    .product__feedback_title {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+
     .product__feedback_wrapper {
         flex-direction: column;
+        align-items: center;
     }
 
     .left{

@@ -297,4 +297,9 @@
     .product__cost div {
         margin-top: 12px;
     }
+
+    .product {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
 }
