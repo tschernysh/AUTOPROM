@@ -95,4 +95,10 @@
     .product__about_chars div {
         width: 100%;
     }
+
+    .product__about {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
 }
